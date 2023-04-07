@@ -219,8 +219,6 @@ ZMK_BEHAVIOR(win_sleep, macro,
 
 /* Keymap */
 
-ZMK_CONDITIONAL_LAYER(FN NUM, SYS)  // FN + NUM --> SYS
-
 ZMK_LAYER(base,
     X_LT     &kp Q          &kp W          &kp F          &kp P           &kp B             X_MT     &kp J                &kp L                         &kp U           &kp Y          &kp SEMI        X_RT
     X_LM     &hml LGUI A    &hml LALT R    &hml LSHFT S   &hml LCTRL T    &kp G             X_MM     &kp M                &hmr LCTRL N                  &hmr RSHFT E    &hmr LALT I    &hmr LGUI O     X_RM
