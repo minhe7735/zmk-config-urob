@@ -2,16 +2,16 @@
 #include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 
 /* map Zen's extra keys */
-// #define X_LT  &kp ESC
-// #define X_LM  &kp TAB
-// #define X_LB  &kp C_VOL_DN
+#define X_LT  &kp ESC
+#define X_LM  &kp TAB
+#define X_LB  &kp C_VOL_DN
 
-// #define X_RT  &kp LC(BACKSPACE)
-// #define X_RM  &kp LS(TAB)
-// #define X_RB  &kp C_VOL_UP
+#define X_RT  &kp LC(BACKSPACE)
+#define X_RM  &kp LS(TAB)
+#define X_RB  &kp C_VOL_UP
 
-#define X_LH  &smart_mouse  // thumb row, left
-#define X_RH  &smart_num       // thumb row, right
+// #define X_LH  &smart_mouse  // thumb row, left
+// #define X_RH  &smart_num       // thumb row, right
 
 
 /* source the main keymap */
