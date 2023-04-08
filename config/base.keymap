@@ -254,7 +254,7 @@ ZMK_LAYER(mouse,
     X_LT     ___           ___           ___           ___           ___             X_MT     ___           U_WH_D        U_MS_U         U_WH_U       ___             X_RT
     X_LM     ___           ___           ___           ___           ___             X_MM     ___           U_MS_L        U_MS_D         U_MS_R       ___             X_RM
     X_LB     ___           ___           ___           ___           ___             X_MB     ___           ___           ___            ___          ___             X_RB
-    X_LH                                               ___           ___             X_MH     U_BTN2        U_BTN1                                                    X_RH
+    X_LH                                               ___           ___             X_MH     U_BTN2        U_BTN1                                                    U_BTN3
 )
 
 /* vim: set ft=c tw=174: */
