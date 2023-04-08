@@ -105,14 +105,14 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
 ZMK_BEHAVIOR(mt_mouse, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
-    QUICK_TAP_MS = <QUICK_TAP_MS>;
+    quick-tap-ms = <QUICK_TAP_MS>;
     bindings = <&mmv>, <&kp>;
 )
 // tap: kp | hold: mouse scroll
 ZMK_BEHAVIOR(mt_wheel, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
-    QUICK_TAP_MS = <QUICK_TAP_MS>;
+    quick-tap-ms = <QUICK_TAP_MS>;
     bindings = <&mwh>, <&kp>;
 )
 
