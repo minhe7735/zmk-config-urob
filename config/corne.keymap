@@ -10,8 +10,8 @@
 // #define X_RM  &kp LS(TAB)
 // #define X_RB  &kp C_VOL_UP
 
-// #define X_LH  &smart_mouse  // thumb row, left
-// #define X_RH  &smart_num       // thumb row, right
+#define X_LH  &smart_mouse  // thumb row, left
+#define X_RH  &smart_num       // thumb row, right
 
 
 /* source the main keymap */
