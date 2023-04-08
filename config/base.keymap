@@ -101,6 +101,21 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
     /delete-property/ ignore-modifiers;
 };
 
+// tap: kp | hold: mouse move
+ZMK_BEHAVIOR(mt_mouse, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    QUICK_TAP_MS = <QUICK_TAP_MS>;
+    bindings = <&mmv>, <&kp>
+)
+// tap: kp | hold: mouse scroll
+ZMK_BEHAVIOR(mt_wheel, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    QUICK_TAP_MS = <QUICK_TAP_MS>;
+    bindings = <&mwh>, <&kp>
+)
+
 // tap: num-word | double-tap: sticky num-layer | hold: num-layer
 #define SMART_NUM &smart_num NUM 0
 ZMK_BEHAVIOR(smart_num, hold_tap,
@@ -216,10 +231,10 @@ ZMK_BEHAVIOR(win_sleep, macro,
 /* Keymap */
 
 ZMK_LAYER(base,
-    X_LT     &kp Q          &kp W          &kp F           &kp P           &kp B             X_MT     &mt U_WH_U J         &kp L                         &mt U_MS_U U        &kp Y            &kp SEMI          X_RT
-    X_LM     &kp A          &kp R          &kp S           &kp T           &kp G             X_MM     &mt U_WH_D M         &mt U_MS_L N                  &mt U_MS_D E        &mt U_MS_R I     &kp O             X_RM
-    X_LB     &hml LGUI Z    &hml LALT X    &hml LSHFT C    &hml LCTRL D    &kp V             X_MB     &kp K                &hmr LCTRL H                  &hmr RSHFT COMMA    &hmr LALT DOT    &hmr LGUI FSLH    X_RB
-    X_LH                                                   &smart_shft     &lt SYM SPACE     X_MH     &lt NUM BACKSPACE    &mt LS(LC(LEFT_ALT)) ENTER                                                           X_RH
+    X_LT     &kp Q          &kp W          &kp F           &kp P           &kp B             X_MT     &mt_wheel SCROLL_UP J      &kp L                         &mt_mouse MOVE_UP U      &kp Y                     &kp SEMI          X_RT
+    X_LM     &kp A          &kp R          &kp S           &kp T           &kp G             X_MM     &mt_wheel SCROLL_DOWN M    &mt_mouse MOVE_LEFT N         &mt_mouse MOVE_DOWN E    &mt_mouse MOVE_RIGHT I    &kp O             X_RM
+    X_LB     &hml LGUI Z    &hml LALT X    &hml LSHFT C    &hml LCTRL D    &kp V             X_MB     &kp K                      &hmr LCTRL H                  &hmr RSHFT COMMA         &hmr LALT DOT             &hmr LGUI FSLH    X_RB
+    X_LH                                                   &smart_shft     &lt SYM SPACE     X_MH     &lt NUM BACKSPACE          &mt LS(LC(LEFT_ALT)) ENTER                                                                         X_RH
 )
 
 ZMK_LAYER(sym,
