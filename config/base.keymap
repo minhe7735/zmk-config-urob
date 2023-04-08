@@ -106,14 +106,14 @@ ZMK_BEHAVIOR(mt_mouse, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
     QUICK_TAP_MS = <QUICK_TAP_MS>;
-    bindings = <&mmv>, <&kp>
+    bindings = <&mmv>, <&kp>;
 )
 // tap: kp | hold: mouse scroll
 ZMK_BEHAVIOR(mt_wheel, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
     QUICK_TAP_MS = <QUICK_TAP_MS>;
-    bindings = <&mwh>, <&kp>
+    bindings = <&mwh>, <&kp>;
 )
 
 // tap: num-word | double-tap: sticky num-layer | hold: num-layer
