@@ -216,10 +216,10 @@ ZMK_BEHAVIOR(win_sleep, macro,
 /* Keymap */
 
 ZMK_LAYER(base,
-    X_LT     &kp Q          &kp W          &kp F          &kp P           &kp B             X_MT     &kp J                &kp L                         &kp U           &kp Y          &kp SEMI        X_RT
-    X_LM     &hml LGUI A    &hml LALT R    &hml LSHFT S   &hml LCTRL T    &kp G             X_MM     &kp M                &hmr LCTRL N                  &hmr RSHFT E    &hmr LALT I    &hmr LGUI O     X_RM
-    X_LB     &kp Z          &kp X          &kp C          &kp D           &kp V             X_MB     &kp K                &kp H                         &kp COMMA       &kp DOT        &kp FSLH        X_RB
-    X_LH                                                  &smart_shft     &lt SYM SPACE     X_MH     &lt NUM BACKSPACE    &mt LS(LC(LEFT_ALT)) ENTER                                                   X_RH
+    X_LT     &kp Q          &kp W          &kp F           &kp P           &kp B             X_MT     &mt U_WH_U J         &kp L                         &mt U_MS_U U        &kp Y            &kp SEMI          X_RT
+    X_LM     &kp A          &kp R          &kp S           &kp T           &kp G             X_MM     &mt U_WH_D M         &mt U_MS_L N                  &mt U_MS_D E        &mt U_MS_R I     &kp O             X_RM
+    X_LB     &hml LGUI Z    &hml LALT X    &hml LSHFT C    &hml LCTRL D    &kp V             X_MB     &kp K                &hmr LCTRL H                  &hmr RSHFT COMMA    &hmr LALT DOT    &hmr LGUI FSLH    X_RB
+    X_LH                                                   &smart_shft     &lt SYM SPACE     X_MH     &lt NUM BACKSPACE    &mt LS(LC(LEFT_ALT)) ENTER                                                           X_RH
 )
 
 ZMK_LAYER(sym,
