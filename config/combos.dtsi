@@ -1,18 +1,27 @@
-// /*                KEY POSITIONS
+/*                KEY POSITIONS
 
-//   ╭─────────────────────╮ ╭─────────────────────╮
-//   │ LT4 LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3 RT4 │
-//   │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │
-//   │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │
-//   ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
-//           ╰─────────────╯ ╰─────────────╯ */
+  ╭─────────────────────╮ ╭─────────────────────╮
+  │ LT4 LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3 RT4 │
+  │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │
+  │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │
+  ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
+          ╰─────────────╯ ╰─────────────╯ */
 
-// // use global-quick-tap-ms for combos (requires PR 1387)
-// #undef COMBO_HOOK
-// #define COMBO_HOOK global-quick-tap-ms = <100>;
+// use global-quick-tap-ms for combos (requires PR 1387)
+#undef COMBO_HOOK
+#define COMBO_HOOK global-quick-tap-ms = <100>;
 
-// #define COMBO_TERM_FAST 20
-// #define COMBO_TERM_SLOW 35
+#define COMBO_TERM_FAST 20
+#define COMBO_TERM_SLOW 35
+
+ZMK_COMBO(normal,       &to DEF,            RT2 RT3,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(functions,    &to FN,             RB2 RB3,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(genshin,      &to GENSHIN,        RT0 RT4,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(move_window,  &kp LG(LS(LEFT)),   LT3 LT2,     DEF SYM NUM FN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(maximize,     &kp LG(UP),         LT3 LT2 LT1, DEF SYM NUM FN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(copy,         &to &kp LC(C),      LB3 LB2,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(paste,        &to &kp LC(V),      LB2 LB1,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(cut,          &to &kp LC(X),      LB3 LB1,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
 
 // // make homerow combos tap-only (so HRMs can be chorded instantaneously)
 // #define HRC_TAB    &hml         LA(LCTRL) TAB
@@ -67,4 +76,7 @@
 // ZMK_COMBO(minus, &kp MINUS,     RM1 RB1,     DEF NAV NUM, COMBO_TERM_SLOW)
 // ZMK_COMBO(fslh,  &kp FSLH,      RM2 RB2,     DEF NAV NUM, COMBO_TERM_SLOW)
 // ZMK_COMBO(pipe,  &kp PIPE,      RM3 RB3,     DEF NAV NUM, COMBO_TERM_SLOW)
+
+
+
 
