@@ -18,13 +18,13 @@ ZMK_COMBO(lClick,       &mkp MB1,           RT1 RM1,     DEF SYM NUM FN GENSHIN 
 ZMK_COMBO(rClick,       &mkp MB2,           RT2 RM2,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
 ZMK_COMBO(mClick,       &mkp MB3,           RT3 RM3,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
 ZMK_COMBO(normal,       &to DEF,            RT2 RT3,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(functions,    &to FN,             RT3 RT4,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(functions,    &to FN,             RB2 RB3,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
 ZMK_COMBO(genshin,      &to GENSHIN,        RT0 RT4,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
 ZMK_COMBO(move_window,  &kp LG(LS(LEFT)),   LT3 LT2,     DEF SYM NUM FN MOUSE, COMBO_TERM_FAST)
 ZMK_COMBO(maximize,     &kp LG(UP),         LT3 LT2 LT1, DEF SYM NUM FN MOUSE, COMBO_TERM_FAST)
-// ZMK_COMBO(copy,         &to &kp LC(C),      LB3 LB2,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
-// ZMK_COMBO(paste,        &to &kp LC(V),      LB2 LB1,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
-// ZMK_COMBO(cut,          &to &kp LC(X),      LB3 LB1,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(copy,         &to &kp LC(C),      LB3 LB2,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(paste,        &to &kp LC(V),      LB2 LB1,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(cut,          &to &kp LC(X),      LB3 LB1,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
 
 // // make homerow combos tap-only (so HRMs can be chorded instantaneously)
 // #define HRC_TAB    &hml         LA(LCTRL) TAB
