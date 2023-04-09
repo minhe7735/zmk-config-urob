@@ -10,8 +10,8 @@
 #define X_RM  &kp LS(TAB)
 #define X_RB  &kp C_VOL_UP
 
-#define X_LH  &smart_mouse  // thumb row, left
-#define X_RH  &smart_num NUM 0       // thumb row, right
+#define X_LH  &mkp MB1  // thumb row, left
+#define X_RH  &mkp MB2  // thumb row, right
 
 #define CONFIG_WIRELESS 1
 

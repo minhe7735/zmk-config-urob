@@ -10,7 +10,7 @@
 #define NUM 2
 #define FN 3
 #define GENSHIN 4
-#define MOUSE 5
+// #define MOUSE 5
 
 #include "mouse.dtsi"
 #include "combos.dtsi"  // requires layer aliases
@@ -168,12 +168,12 @@ ZMK_BEHAVIOR(num_dance, tap_dance,
     layers = <NUM>;
 };
 
-// smart-mouse, requires PR #1366
-ZMK_BEHAVIOR(smart_mouse, tri_state,
-    bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
-    ignored-key-positions = <LT1 LT3 RT1 RT2 RT3 RM1 RM2 RM3 RH0 RH1>;
-    ignored-layers = <MOUSE>;
-)
+// // smart-mouse, requires PR #1366
+// ZMK_BEHAVIOR(smart_mouse, tri_state,
+//     bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
+//     ignored-key-positions = <LT1 LT3 RT1 RT2 RT3 RM1 RM2 RM3 RH0 RH1>;
+//     ignored-layers = <MOUSE>;
+// )
 
 /* Custom behaviors */
 
@@ -303,11 +303,11 @@ ZMK_LAYER(genshin,
     &sk LALT                                    &kp SPACE    &kp M      X_MH     XXX    XXX                          X_RH
 )
 
-ZMK_LAYER(mouse,
-    X_LT     ___           ___           ___           ___           ___             X_MT     ___           U_WH_D        U_MS_U         U_WH_U       ___             X_RT
-    X_LM     ___           ___           ___           ___           ___             X_MM     ___           U_MS_L        U_MS_D         U_MS_R       ___             X_RM
-    X_LB     ___           ___           ___           ___           ___             X_MB     ___           ___           ___            ___          ___             X_RB
-    X_LH                                               ___           ___             X_MH     U_BTN2        U_BTN1                                                    U_BTN3
-)
+// ZMK_LAYER(mouse,
+//     X_LT     ___           ___           ___           ___           ___             X_MT     ___           U_WH_D        U_MS_U         U_WH_U       ___             X_RT
+//     X_LM     ___           ___           ___           ___           ___             X_MM     ___           U_MS_L        U_MS_D         U_MS_R       ___             X_RM
+//     X_LB     ___           ___           ___           ___           ___             X_MB     ___           ___           ___            ___          ___             X_RB
+//     X_LH                                               ___           ___             X_MH     U_BTN2        U_BTN1                                                    U_BTN3
+// )
 
 /* vim: set ft=c tw=174: */
