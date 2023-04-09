@@ -12,8 +12,8 @@
 #define GENSHIN 4
 #define MOUSE 5
 
-#include "combos.dtsi"  // requires layer aliases
 #include "mouse.dtsi"
+#include "combos.dtsi"  // requires layer aliases
 #include "extra_keys.h"
 
 #define XXX &none
