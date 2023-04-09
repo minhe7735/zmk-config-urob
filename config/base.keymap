@@ -161,7 +161,7 @@ ZMK_BEHAVIOR(mt_mouse, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&amr>, <&kp>;
+    bindings = <&mmv>, <&kp>;
 )
 
 
