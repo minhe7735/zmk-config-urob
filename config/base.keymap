@@ -143,10 +143,10 @@ ZMK_LAYER(sym,
 )
 
 ZMK_LAYER(num,
-    X_LT     XXX    &kp N7    &kp N8    &kp N9        XXX               X_MT     XXX                   &kp LS(LA(LC(LEFT)))    &kp UP      &kp LS(LA(LC(RIGHT)))    XXX                      X_RT
-    X_LM     XXX    &kp N4    &kp N5    &kp N6        XXX               X_MM     &kp LS(LA(LC(UP)))    &kp LEFT                &kp DOWN    &kp RIGHT                &kp LS(LA(LC(DOWN)))     X_RM
-    X_LB     XXX    &kp N1    &kp N2    &kp N3        &kp LC(MINUS)     X_MB     &kp LC(EQUAL)         &kp HOME                XXX         &kp END                  XXX                      X_RB
-    X_LH                                &kp N0        ___               X_MH     ___                   XXX                                                                                   X_RH
+    X_LT     XXX    &kp N7          &kp N8           &kp N9           XXX               X_MT     XXX                   &kp LS(LA(LC(LEFT)))    &kp UP      &kp LS(LA(LC(RIGHT)))    XXX                      X_RT
+    X_LM     LGUI   &hml LALT N4    &hml LSHFT N5    &hml LCTRL N6    XXX               X_MM     &kp LS(LA(LC(UP)))    &kp LEFT                &kp DOWN    &kp RIGHT                &kp LS(LA(LC(DOWN)))     X_RM
+    X_LB     XXX    &kp N1          &kp N2           &kp N3           &kp LC(MINUS)     X_MB     &kp LC(EQUAL)         &kp HOME                ___         &kp END                  XXX                      X_RB
+    &kp DOT                                          &kp N0           ___               X_MH     ___                   XXX                                                                                   X_RH
 )
 
 ZMK_LAYER(fn,
