@@ -2,11 +2,11 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: minhe7735
-      url-base: https://github.com/minhe7735
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: minhe7735
+      remote: urob
       revision: main
       import: app/west.yml
   self:
