@@ -60,7 +60,7 @@
 #define U_WH_R &mwh SCROLL_RIGHT
 
 //teleport cursor
-#define M_START &mmvt MOVE(-999999,-999999)// top left
+#define M_START &mmvt MOVE(-9999,-9999)// top left
 #define M_L_DIV 384
 #define M_LH_DIV 192
 #define M_S_DIV 360
@@ -69,7 +69,7 @@
 #define DEF_POINTS(NAME, OFFSET_X, OFFSET_Y, DX, DY, MX, MY) \
     ZMK_BEHAVIOR(NAME, macro, \
         bindings = <&macro_tap M_START>, \
-        <&macro_tap &mmvt MOVE((OFFSET_X + MX * DX), (OFFSET_Y + MY * DY))> ;\
+        <&macro_tap &mmvt MOVE((OFFSET_X + MX * DX)*10000, (OFFSET_Y + MY * DY)*10000)> ;\
     )
 //vertical left
 DEF_POINTS(LMT1,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 0, 0)
