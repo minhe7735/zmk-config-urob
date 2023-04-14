@@ -12,6 +12,13 @@
   delay-ms = <0>;                   // 10
 };
 
+
+ZMK_BEHAVIOR(mmvt, mouse_move,
+    delay-ms = <0>;
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <0>;
+)
+
 #define U_MOUSE_MOVE_MAX 1250       // 600
 #define U_MOUSE_SCROLL_MAX 100      // 10
 
@@ -46,7 +53,7 @@
 #define U_WH_R &mwh SCROLL_RIGHT
 
 //teleport cursor
-#define M_START &mmv MOVE(-9999,-9999)// top left
+#define M_START &mmvt MOVE(-9999,-9999)// top left
 #define M_L_DIV 384
 #define M_LH_DIV 192
 #define M_S_DIV 360
@@ -56,7 +63,8 @@
     ZMK_BEHAVIOR(NAME, macro, \
         wait-ms = <0>;\
         tap-ms = <5>; \
-        bindings = <&macro_tap M_START>, <&macro_tap &mmv MOVE((OFFSET_X + MX * DX), (OFFSET_Y + MY * DY))> ;\
+        bindings = <&macro_tap M_START>, \
+        <&macro_tap &mmvt MOVE((OFFSET_X + MX * DX), (OFFSET_Y + MY * DY))> ;\
     )
 //vertical left
 DEF_POINTS(LMT1,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 0, 0)
