@@ -15,7 +15,7 @@
 
 / {
 	behaviors {
-		mmvt: behavior_mouse_move {
+		mmvt: mmvt {
 			compatible = "zmk,behavior-mouse-move";
 			label = "MOUSE_MOVE_TP";
 			#binding-cells = <1>;
