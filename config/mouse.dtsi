@@ -48,18 +48,18 @@
 
 
 
-/ {
-	behaviors {
-		mmvt: mmvt {
-			compatible = "zmk,behavior-mouse-move";
-			label = "MOUSE_MOVE_TP";
-			#binding-cells = <1>;
-			delay-ms = <0>;
-			time-to-max-speed-ms = <0>;
-			acceleration-exponent = <0>;
-		};
-	};
-};
+// / {
+// 	behaviors {
+// 		mmvt: mmvt {
+// 			compatible = "zmk,behavior-mouse-move";
+// 			label = "MOUSE_MOVE_TP";
+// 			#binding-cells = <1>;
+// 			delay-ms = <0>;
+// 			time-to-max-speed-ms = <0>;
+// 			acceleration-exponent = <0>;
+// 		};
+// 	};
+// };
 
 // //teleport cursor
 // #define M_START &mmvt MOVE(-99990000,-99990000)// top left
