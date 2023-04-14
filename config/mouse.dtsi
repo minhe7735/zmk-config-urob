@@ -62,8 +62,8 @@
 };
 
 //teleport cursor
-#define M_START_X &mmvt MOVE_VERT(-9999)// top left
-#define M_START_Y &mmvt MOVE_HOR(-9999)// top left
+#define M_START_Y &mmvt MOVE_VERT(-99999)// top left
+#define M_START_X &mmvt MOVE_HOR(-99999)// top left
 #define M_L_DIV 384
 #define M_LH_DIV 192
 #define M_S_DIV 360
@@ -82,16 +82,6 @@
         <&macro_tap &mmvt MOVE((OFFSET_X + MX * DX) * M_SCALE, (OFFSET_Y + MY * DY) * M_SCALE)>, \
         <&macro_tap &mmvt MOVE((OFFSET_X + MX * DX) * M_SCALE, (OFFSET_Y + MY * DY) * M_SCALE)> ;\
     )
-
-
-// #define DEF_POINTS_TEST(NAME, OFFSET_X, OFFSET_Y, DX, DY, MX, MY) \
-//     ZMK_BEHAVIOR(NAME, macro, \
-//         bindings = <&macro_tap &mmvt MOVE((1920*10), (1080*10))>,\
-//         <&macro_tap &mmvt MOVE((1920*10), (1080*10))>,\
-//         <&macro_tap &mmvt MOVE((1920*10), (1080*10))> ;\
-//     )
-// //test
-// DEF_POINTS_TEST(LMT_TEST,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 0, 0)
 
 
 //vertical left
