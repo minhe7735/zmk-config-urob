@@ -28,7 +28,7 @@ ZMK_COMBO(maximize,     &kp LG(UP),         LT3 LT2 LT1, DEF SYM NUM FN, COMBO_T
 ZMK_COMBO(copy,         &kp LC(C),          LB3 LB2,     DEF SYM NUM FN GENSHIN, COMBO_TERM_FAST)
 ZMK_COMBO(paste,        &kp LC(V),          LB2 LB1,     DEF SYM NUM FN GENSHIN, COMBO_TERM_FAST)
 ZMK_COMBO(cut,          &kp LC(X),          LB3 LB1,     DEF SYM NUM FN GENSHIN, COMBO_TERM_FAST)
-ZMK_COMBO(mouseL,       &to MOUSE,          RT1 RT2,     DEF SYM NUM FN GENSHIN, COMBO_TERM_FAST)
+// ZMK_COMBO(mouseL,       &to MOUSE,          RT1 RT2,     DEF SYM NUM FN GENSHIN, COMBO_TERM_FAST)
 
 
 

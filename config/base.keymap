@@ -163,11 +163,11 @@ ZMK_LAYER(genshin,
     &sk LALT                                    &kp SPACE    &kp M      X_MH     XXX    XXX                          X_RH
 )
 
-ZMK_LAYER(mouse,
-    X_LT     &LMT1    &LMT2     &LMT3     &LMT4     &LMT5      X_MT     &RMT1     &RMT2     &RMT3     &RMT4     &RMT5      X_RT
-    X_LM     &LMT6    &LMT7     &LMT8     &LMT9     &LMT10     X_MM     &RMT6     &RMT7     &RMT8     &RMT9     &RMT10     X_RM
-    X_LB     &LMT11   &LMT12    &LMT13    &LMT14    &LMT15     X_MB     &RMT11    &RMT12    &RMT13    &RMT14    &RMT15     X_RB
-    X_LH                         ___           ___             X_MH     &LMT_TEST         U_BTN1                                                    U_BTN3
-)
+// ZMK_LAYER(mouse,
+//     X_LT     &LMT1    &LMT2     &LMT3     &LMT4     &LMT5      X_MT     &RMT1     &RMT2     &RMT3     &RMT4     &RMT5      X_RT
+//     X_LM     &LMT6    &LMT7     &LMT8     &LMT9     &LMT10     X_MM     &RMT6     &RMT7     &RMT8     &RMT9     &RMT10     X_RM
+//     X_LB     &LMT11   &LMT12    &LMT13    &LMT14    &LMT15     X_MB     &RMT11    &RMT12    &RMT13    &RMT14    &RMT15     X_RB
+//     X_LH                         ___           ___             X_MH     &LMT_TEST         U_BTN1                                                    U_BTN3
+// )
 
 /* vim: set ft=c tw=174: */
