@@ -13,11 +13,18 @@
 };
 
 
-ZMK_BEHAVIOR(mmvt, mouse_move,
-    delay-ms = <0>;
-    time-to-max-speed-ms = <0>;
-    acceleration-exponent = <0>;
-)
+/ {
+	behaviors {
+		mmvt: behavior_mouse_move {
+			compatible = "zmk,behavior-mouse-move";
+			label = "MOUSE_MOVE_TP";
+			#binding-cells = <1>;
+			delay-ms = <0>;
+			time-to-max-speed-ms = <0>;
+			acceleration-exponent = <0>;
+		};
+	};
+};
 
 #define U_MOUSE_MOVE_MAX 1250       // 600
 #define U_MOUSE_SCROLL_MAX 100      // 10
