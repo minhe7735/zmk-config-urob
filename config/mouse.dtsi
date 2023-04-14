@@ -62,8 +62,8 @@
 };
 
 //teleport cursor
-#define M_START_Y &mmvt MOVE_VERT(-99999)// top left
-#define M_START_X &mmvt MOVE_HOR(-99999)// top left
+#define M_START_Y &mmvt MOVE_VERT(-30000)// top left
+#define M_START_X &mmvt MOVE_HOR(-30000)// top left
 #define M_L_DIV 384
 #define M_LH_DIV 192
 #define M_S_DIV 360
