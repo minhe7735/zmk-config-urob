@@ -30,12 +30,12 @@ ZMK_COMBO(paste,        &kp LC(V),          LB2 LB1,     DEF SYM NUM FN GENSHIN,
 ZMK_COMBO(cut,          &kp LC(X),          LB3 LB1,     DEF SYM NUM FN GENSHIN, COMBO_TERM_FAST)
 ZMK_COMBO(mouseL,       &to MOUSE,          RT1 RT2,     DEF SYM NUM FN GENSHIN, COMBO_TERM_FAST)
 
-ZMK_COMBO(LMT4,         &LMT4,              LT3 LM3,     MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(LMT5,         &LMT5,              LT2 LM2,     MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(LMT6,         &LMT6,              LT1 LM1,     MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(LMT10,        &LMT10,             LM3 LB3,     MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(LMT11,        &LMT11,             LM2 LB2,     MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(LMT12,        &LMT12,             LM1 LB1,     MOUSE, COMBO_TERM_FAST)
+// ZMK_COMBO(LMT4,         &LMT4,              LT3 LM3,     MOUSE, COMBO_TERM_FAST)
+// ZMK_COMBO(LMT5,         &LMT5,              LT2 LM2,     MOUSE, COMBO_TERM_FAST)
+// ZMK_COMBO(LMT6,         &LMT6,              LT1 LM1,     MOUSE, COMBO_TERM_FAST)
+// ZMK_COMBO(LMT10,        &LMT10,             LM3 LB3,     MOUSE, COMBO_TERM_FAST)
+// ZMK_COMBO(LMT11,        &LMT11,             LM2 LB2,     MOUSE, COMBO_TERM_FAST)
+// ZMK_COMBO(LMT12,        &LMT12,             LM1 LB1,     MOUSE, COMBO_TERM_FAST)
 
 
 
