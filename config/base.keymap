@@ -154,7 +154,7 @@ ZMK_BEHAVIOR(LMT15_morph, mod_morph,
 
 
 ZMK_BEHAVIOR(RMT1_morph, mod_morph,
-    bindings = <&RMT1>, <&RMT3>;
+    bindings = <&RMT1>, <&RMT2>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 ZMK_BEHAVIOR(RMT5_morph, mod_morph,
