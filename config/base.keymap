@@ -60,6 +60,8 @@ MAKE_HRM(hmr_cml, &cml, &kp, KEYS_L THUMBS)  // right-hand HRMs
 MAKE_HRM(hmr_smd, &smd, &kp, KEYS_L THUMBS)  // right-hand HRMs
 MAKE_HRM(hmr_amr, &amr, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
+MAKE_HRM(hmr_mouse_tp, &kp, &sl, KEYS_L THUMBS)
+
 /* Caps-word, num-word and smart-mouse */
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
