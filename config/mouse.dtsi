@@ -74,6 +74,8 @@
     ZMK_BEHAVIOR(NAME, macro, \
         bindings = <&macro_tap M_START_X>, \
         <&macro_tap M_START_X>, \
+        <&macro_tap M_START_X>, \
+        <&macro_tap M_START_Y>, \
         <&macro_tap M_START_Y>, \
         <&macro_tap M_START_Y>, \
         <&macro_tap &mmvt MOVE_VERT((OFFSET_Y + MY * DY) * M_SCALE)>,\
