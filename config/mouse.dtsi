@@ -21,8 +21,8 @@
 /* Mouse move behavior */
 #define MOVE_VERT(vert) ((vert)&0xFFFFFFFF)
 #define MOVE_VERT_DECODE(encoded) (int32_t)((encoded)&0x00000000FFFFFFFF)
-#define MOVE_HOR(hor) (((hor)&0xFFFFFFFF) << 32)
-#define MOVE_HOR_DECODE(encoded) (int32_t)(((encoded)&0xFFFFFFFF00000000) >> 32)
+#define MOVE_HOR(hor) (((hor)&0xFFFFFFFF))
+#define MOVE_HOR_DECODE(encoded) (int32_t)((encoded)&0x00000000FFFFFFFF)
 
 
 
