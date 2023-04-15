@@ -13,6 +13,19 @@
 };
 
 
+#undef MOVE_VERT(vert)
+#undef MOVE_VERT_DECODE(encoded)
+#undef MOVE_HOR(hor)
+#undef MOVE_HOR_DECODE(encoded)
+
+/* Mouse move behavior */
+#define MOVE_VERT(vert) ((vert)&0xFFFFFFFF)
+#define MOVE_VERT_DECODE(encoded) (int32_t)((encoded)&0x00000000FFFFFFFF)
+#define MOVE_HOR(hor) (((hor)&0xFFFFFFFF) << 32)
+#define MOVE_HOR_DECODE(encoded) (int32_t)(((encoded)&0xFFFFFFFF00000000) >> 32)
+
+
+
 #define U_MOUSE_MOVE_MAX 1250       // 600
 #define U_MOUSE_SCROLL_MAX 100      // 10
 
@@ -62,27 +75,19 @@
 };
 
 //teleport cursor
-#define M_START_Y &mmvt MOVE_VERT(-30000)// top left
-#define M_START_X &mmvt MOVE_HOR(-30000)// top left
+#define M_START_Y &mmvt MOVE_VERT(-90000)// top left
+#define M_START_X &mmvt MOVE_HOR(-90000)// top left
 #define M_L_DIV 384
 #define M_LH_DIV 192
 #define M_S_DIV 360
 #define M_SH_DIV 180
-#define M_SCALE 10
+#define M_SCALE 30
 
 #define DEF_POINTS(NAME, OFFSET_X, OFFSET_Y, DX, DY, MX, MY) \
     ZMK_BEHAVIOR(NAME, macro, \
         bindings = <&macro_tap M_START_X>, \
-        <&macro_tap M_START_X>, \
-        <&macro_tap M_START_X>, \
-        <&macro_tap M_START_Y>, \
-        <&macro_tap M_START_Y>, \
         <&macro_tap M_START_Y>, \
         <&macro_tap &mmvt MOVE_VERT((OFFSET_Y + MY * DY) * M_SCALE)>,\
-        <&macro_tap &mmvt MOVE_VERT((OFFSET_Y + MY * DY) * M_SCALE)>,\
-        <&macro_tap &mmvt MOVE_VERT((OFFSET_Y + MY * DY) * M_SCALE)>,\
-        <&macro_tap &mmvt MOVE_HOR((OFFSET_X + MX * DX) * M_SCALE)>,\
-        <&macro_tap &mmvt MOVE_HOR((OFFSET_X + MX * DX) * M_SCALE)>,\
         <&macro_tap &mmvt MOVE_HOR((OFFSET_X + MX * DX) * M_SCALE)> ;\
     )
 
