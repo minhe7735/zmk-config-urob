@@ -72,8 +72,6 @@
 
 #define DEF_POINTS(NAME, OFFSET_X, OFFSET_Y, DX, DY, MX, MY) \
     ZMK_BEHAVIOR(NAME, macro, \
-        wait-ms = <5>; \
-        tap-ms = <100>; \
         bindings = <&macro_tap M_START_X>, \
         <&macro_tap M_START_X>, \
         <&macro_tap M_START_X>, \
