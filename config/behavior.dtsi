@@ -82,7 +82,7 @@ ZMK_BEHAVIOR(swapper, tri_state,
 
 /*points for mouse tp*/
 #define MAKE_MMTP(NAME, POINT1, POINT2) \
-    ZMK_BEHAVIOR(NAME, , mod_morph, \
+    ZMK_BEHAVIOR(NAME, mod_morph, \
         bindings = <POINT1>, <POINT2>; \
         mods = <(MOD_LSFT|MOD_RSFT)>; \
     )
