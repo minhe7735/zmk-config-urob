@@ -193,7 +193,7 @@ DEF_POINTS(RMT15, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 4, 
 
 // tap:sl double tap: to workaround
 ZMK_BEHAVIOR(to_to_mouse, macro, \
-    wait-ms = <0>; \
+    wait-ms = <5>; \
     tap-ms = <0>; \
-    bindings = <&macro_tap &to DEF &to MOUSE>; \
+    bindings = <&macro_tap &to DEF>, <&macro_tap &to MOUSE>; \
 )
