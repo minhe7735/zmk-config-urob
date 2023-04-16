@@ -74,6 +74,8 @@ MAKE_MT(RMT10_mt, &RMT10, &RMT9)
 MAKE_MT(RMT11_mt, &RMT11, &RMT12)
 MAKE_MT(RMT15_mt, &RMT15, &RMT14)
 
+MAKE_MT(mt_layer, &to, &sl)
+
 // Alt+Tab swapper, requires PR #1366
 ZMK_BEHAVIOR(swapper, tri_state,
     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
