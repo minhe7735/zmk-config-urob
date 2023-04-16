@@ -76,14 +76,14 @@ MAKE_MT(RMT15_mt, &RMT15, &RMT14)
 
 MAKE_MT(mt_layer, &to, &sl)
 
-MAKE_MT(mt_mtp_up,      U_MS_U, &RMT3)
-MAKE_MT(mt_mtp_down,    U_MS_D, &RMT8)
-MAKE_MT(mt_mtp_left,    U_MS_L, &RMT7)
-MAKE_MT(mt_mtp_right,   U_MS_R, &RMT9)
-MAKE_MT(mt_mtp_s_up,    U_WH_U, &RMT1)
-MAKE_MT(mt_mtp_s_down,  U_WH_D, &RMT6)
-MAKE_MT(mt_mtp_s_left,  U_WH_L, &RMT2)
-MAKE_MT(mt_mtp_s_right, U_WH_R, &RMT4)
+MAKE_MT(mt_mtp_up,      &mmv, &RMT3)
+MAKE_MT(mt_mtp_down,    &mmv, &RMT8)
+MAKE_MT(mt_mtp_left,    &mmv, &RMT7)
+MAKE_MT(mt_mtp_right,   &mmv, &RMT9)
+MAKE_MT(mt_mtp_s_up,    &mwh, &RMT1)
+MAKE_MT(mt_mtp_s_down,  &mwh, &RMT6)
+MAKE_MT(mt_mtp_s_left,  &mwh, &RMT2)
+MAKE_MT(mt_mtp_s_right, &mwh, &RMT4)
 
 
 // Alt+Tab swapper, requires PR #1366
