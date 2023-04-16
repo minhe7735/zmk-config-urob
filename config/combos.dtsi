@@ -31,9 +31,3 @@ ZMK_COMBO(copy,         &kp LC(C),          LB3 LB2,     DEF SYM NUM FN GENSHIN,
 ZMK_COMBO(paste,        &kp LC(V),          LB2 LB1,     DEF SYM NUM FN GENSHIN,       COMBO_TERM_FAST)
 ZMK_COMBO(cut,          &kp LC(X),          LB3 LB1,     DEF SYM NUM FN GENSHIN,       COMBO_TERM_FAST)
 ZMK_COMBO(mouseL,       HRC_LPAR,           RM2 RM3,     DEF SYM NUM FN GENSHIN,       COMBO_TERM_FAST)
-
-
-
-
-
-
