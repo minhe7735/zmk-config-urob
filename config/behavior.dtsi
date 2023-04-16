@@ -60,6 +60,20 @@ MAKE_MM(amr, MOVE_RIGHT, RALT)
 MAKE_MT(mt_mouse, &mmv, &kp) // hold: move, tap: key
 MAKE_MT(mt_wheel, &mwh, &kp) // hold: scroll, tap: key
 
+MAKE_MT(LMT1_mt, &LMT1, &LMT4)
+MAKE_MT(LMT2_mt, &LMT2, &LMT5)
+MAKE_MT(LMT3_mt, &LMT3, &LMT6)
+MAKE_MT(LMT13_mt, &LMT13, &LMT10)
+MAKE_MT(LMT14_mt, &LMT14, &LMT11)
+MAKE_MT(LMT15_mt, &LMT15, &LMT12)
+
+MAKE_MT(RMT1_mt, &RMT1, &RMT2)
+MAKE_MT(RMT5_mt, &RMT5, &RMT4)
+MAKE_MT(RMT6_mt, &RMT6, &RMT7)
+MAKE_MT(RMT10_mt, &RMT10, &RMT9)
+MAKE_MT(RMT11_mt, &RMT11, &RMT12)
+MAKE_MT(RMT15_mt, &RMT15, &RMT14)
+
 // Alt+Tab swapper, requires PR #1366
 ZMK_BEHAVIOR(swapper, tri_state,
     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;

@@ -63,8 +63,8 @@ ZMK_LAYER(genshin,
 )
 
 ZMK_LAYER(mouse,
-    X_LT     XXX    &LMT1_morph     &LMT2_morph     &LMT3_morph     XXX     X_MT     XXX         &RMT1_morph     &RMT3     &RMT5_morph     XXX     X_RT
-    X_LM     XXX    &LMT7           &LMT8           &LMT9           XXX     X_MM     XXX         &RMT6_morph     &RMT8     &RMT10_morph    XXX     X_RM
-    X_LB     XXX    &LMT13_morph    &LMT14_morph    &LMT15_morph    XXX     X_MB     XXX         &RMT11_morph    &RMT13    &RMT15_morph    XXX     X_RB
-    X_LH                                            &sk LSHFT       XXX     X_MH     &mkp MB1    &mkp MB2                                          &mkp MB3
+    X_LT     XXX    &LMT1_mt        &LMT2_mt        &LMT3_mt        XXX     X_MT     XXX         &RMT1_mt     &RMT3     &RMT5_mt     XXX     X_RT
+    X_LM     XXX    &LMT7           &LMT8           &LMT9           XXX     X_MM     XXX         &RMT6_mt     &RMT8     &RMT10_mt    XXX     X_RM
+    X_LB     XXX    &LMT13_mt       &LMT14_mt       &LMT15_mt       XXX     X_MB     XXX         &RMT11_mt    &RMT13    &RMT15_mt    XXX     X_RB
+    X_LH                                            &sk LSHFT       XXX     X_MH     &mkp MB1    &mkp MB2                                    &mkp MB3
 )
