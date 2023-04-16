@@ -1,18 +1,3 @@
-&sk {  // sticky-key config
-    release-after-ms = <600>;  // release after 0.6s
-    quick-release;             // no double capitalization when rolling keys
-};
-
-&sl {  // sticky-layer config
-    ignore-modifiers;          // allow chording sticky mods & layers
-};
-
-&lt {  // layer-tap config
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-};
-
 /* Homerow mods */
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
@@ -34,8 +19,8 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 MAKE_HRM(hmr_cml, &cml, &kp, KEYS_L THUMBS)  // right-hand HRMs + move left
 MAKE_HRM(hmr_smd, &smd, &kp, KEYS_L THUMBS)  // right-hand HRMs + move down
 MAKE_HRM(hmr_amr, &amr, &kp, KEYS_L THUMBS)  // right-hand HRMs + move right
-
 MAKE_HRM(hmr_mouse_tp, &kp, &sl, KEYS_L THUMBS) // to mouse layer combo
+
 
 /* Caps-word */
 
@@ -44,9 +29,7 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
     bindings = <&sk LSHFT>, <&caps_word>;
     mods = <(MOD_LSFT)>;
 )
-&caps_word {  // mods deactivate caps-word, requires PR #1441
-    /delete-property/ ignore-modifiers;
-};
+
 
 /*mod move*/
 
@@ -62,6 +45,9 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
 MAKE_MM(cml, MOVE_LEFT, RCTRL)
 MAKE_MM(smd, MOVE_DOWN, RSHFT)
 MAKE_MM(amr, MOVE_RIGHT, RALT)
+
+
+/*mod tap*/
 
 #define MAKE_MT(NAME, HOLD, TAP) \
     ZMK_BEHAVIOR(NAME, hold_tap, \
@@ -80,7 +66,9 @@ ZMK_BEHAVIOR(swapper, tri_state,
     ignored-key-positions = <LT2>;
 )
 
-/*points for mouse tp*/
+
+/*mod morphs for mouse tp*/
+
 #define MAKE_MMTP(NAME, POINT1, POINT2) \
     ZMK_BEHAVIOR(NAME, mod_morph, \
         bindings = <POINT1>, <POINT2>; \
@@ -102,8 +90,8 @@ MAKE_MMTP(RMT11_morph, &RMT11, &RMT12)
 MAKE_MMTP(RMT15_morph, &RMT15, &RMT14)
 
 
+/*teleport cursor*/
 
-//teleport cursor
 / {
 	behaviors {
 		mmvt: mmvt {
@@ -120,11 +108,16 @@ MAKE_MMTP(RMT15_morph, &RMT15, &RMT14)
 
 #define M_START_Y &mmvt MOVE_VERT(-30000)// top left
 #define M_START_X &mmvt MOVE_HOR(-30000)// top left
-#define M_L_DIV 384
-#define M_LH_DIV 192
-#define M_S_DIV 360
-#define M_SH_DIV 180
+#define RES_LONG 1920
+#define RES_SHORT 1080
+#define SHORT_SEC 3
+#define LONG_SEC 5
+#define M_L_DIV (RES_LONG/LONG_SEC)
+#define M_LH_DIV (M_L_DIV/2)
+#define M_S_DIV (RES_SHORT/SHORT_SEC)
+#define M_SH_DIV (M_S_DIV/2)
 #define M_SCALE 10
+#define OFFSET 429
 
 #define DEF_POINTS(NAME, OFFSET_X, OFFSET_Y, DX, DY, MX, MY) \
     ZMK_BEHAVIOR(NAME, macro, \
@@ -143,11 +136,6 @@ MAKE_MMTP(RMT15_morph, &RMT15, &RMT14)
     )
 
 
-// for(int row = 0; row < 5; ++row){
-//   for(int col = 0; col < 3; ++col){
-//     DEF_POINTS(LMT + (row * col + col),  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, col, row);
-//   }
-// }
 
 //vertical left
 DEF_POINTS(LMT1,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 0, 0)
@@ -167,25 +155,21 @@ DEF_POINTS(LMT14, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 1, 4)
 DEF_POINTS(LMT15, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 2, 4)
 
 
-// for(int row = 0; row < 3; ++row){
-//   for(int col = 0; col < 5; ++col){
-//     DEF_POINTS(RMT1,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, col, row);
-//   }
-// }
+
 
 //horizontal right
-DEF_POINTS(RMT1,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 0, 0)
-DEF_POINTS(RMT2,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 1, 0)
-DEF_POINTS(RMT3,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 2, 0)
-DEF_POINTS(RMT4,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 3, 0)
-DEF_POINTS(RMT5,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 4, 0)
-DEF_POINTS(RMT6,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 0, 1)
-DEF_POINTS(RMT7,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 1, 1)
-DEF_POINTS(RMT8,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 2, 1)
-DEF_POINTS(RMT9,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 3, 1)
-DEF_POINTS(RMT10, M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 4, 1)
-DEF_POINTS(RMT11, M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 0, 2)
-DEF_POINTS(RMT12, M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 1, 2)
-DEF_POINTS(RMT13, M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 2, 2)
-DEF_POINTS(RMT14, M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 3, 2)
-DEF_POINTS(RMT15, M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 4, 2)
+DEF_POINTS(RMT1,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 0, 0)
+DEF_POINTS(RMT2,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 1, 0)
+DEF_POINTS(RMT3,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 2, 0)
+DEF_POINTS(RMT4,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 3, 0)
+DEF_POINTS(RMT5,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 4, 0)
+DEF_POINTS(RMT6,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 0, 1)
+DEF_POINTS(RMT7,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 1, 1)
+DEF_POINTS(RMT8,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 2, 1)
+DEF_POINTS(RMT9,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 3, 1)
+DEF_POINTS(RMT10, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 4, 1)
+DEF_POINTS(RMT11, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 0, 2)
+DEF_POINTS(RMT12, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 1, 2)
+DEF_POINTS(RMT13, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 2, 2)
+DEF_POINTS(RMT14, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 3, 2)
+DEF_POINTS(RMT15, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 4, 2)

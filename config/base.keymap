@@ -19,6 +19,7 @@
 
 #define QUICK_TAP_MS 175
 
+#include "conf_changes.dtsi"
 #include "mouse.dtsi"
 #include "combos.dtsi"  // requires layer aliases
 #include "extra_keys.h"
@@ -67,5 +68,3 @@ ZMK_LAYER(mouse,
     X_LB     XXX    &LMT13_morph    &LMT14_morph    &LMT15_morph    XXX     X_MB     XXX     &RMT11_morph    &RMT13    &RMT15_morph    XXX     X_RB
     X_LH                                            &sk LSHFT       XXX     X_MH     XXX     &sk RSHFT                                         X_RH
 )
-
-/* vim: set ft=c tw=174: */

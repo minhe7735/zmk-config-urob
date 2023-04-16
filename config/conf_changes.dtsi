@@ -1,0 +1,32 @@
+/* config changes */
+
+&sk {  // sticky-key
+    release-after-ms = <600>;
+    quick-release;
+};
+
+&sl {  // sticky-layer
+    ignore-modifiers;
+};
+
+&lt {  // layer-tap
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+};
+
+&mmv { // mouse move
+  acceleration-exponent = <1>;
+  time-to-max-speed-ms = <1500>;
+  delay-ms = <0>;
+};
+
+&mwh { // mouse wheel
+  acceleration-exponent = <1>;
+  time-to-max-speed-ms = <5000>;
+  delay-ms = <0>;
+};
+
+&caps_word {  // mods deactivate caps-word, requires PR #1441
+    /delete-property/ ignore-modifiers;
+};
