@@ -199,3 +199,10 @@ DEF_POINTS(RMT12, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 1, 
 DEF_POINTS(RMT13, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 2, 2)
 DEF_POINTS(RMT14, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 3, 2)
 DEF_POINTS(RMT15, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 4, 2)
+
+/*tap dance*/
+
+ZMK_BEHAVIOR(mouse_dance, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&sl MOUSE>, <&to MOUSE>;  // reverse this for sticky-num on single tap
+)
