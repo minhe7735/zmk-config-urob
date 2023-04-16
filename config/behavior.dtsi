@@ -19,7 +19,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 MAKE_HRM(hmr_cml, &cml, &kp, KEYS_L THUMBS)  // right-hand HRMs + move left
 MAKE_HRM(hmr_smd, &smd, &kp, KEYS_L THUMBS)  // right-hand HRMs + move down
 MAKE_HRM(hmr_amr, &amr, &kp, KEYS_L THUMBS)  // right-hand HRMs + move right
-MAKE_HRM(hmr_mouse_tp, &kp, &sl, KEYS_L THUMBS) // to mouse layer combo
+//MAKE_HRM(hmr_mouse_tp, &kp, &sl, KEYS_L THUMBS) // to mouse layer combo
 
 
 /* Caps-word */

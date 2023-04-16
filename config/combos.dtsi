@@ -14,7 +14,7 @@
 #define COMBO_TERM_FAST 20
 #define COMBO_TERM_SLOW 35
 
-#define HRC_LPAR   &hmr_mouse_tp RS(LALT) MOUSE
+//#define HRC_LPAR   &hmr_mouse_tp RS(LALT) MOUSE
 
 //mouse click
 ZMK_COMBO(rlClick,      &mkp MB1,           RT1 RM1,     DEF,                          COMBO_TERM_FAST)
@@ -28,7 +28,7 @@ ZMK_COMBO(lmClick,      &mkp MB3,           LT3 LM3,     DEF,                   
 ZMK_COMBO(normal,       &to DEF,            RT2 RT3,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
 ZMK_COMBO(functions,    &sl FN,             RB2 RB3,     DEF,                          COMBO_TERM_FAST)
 ZMK_COMBO(genshin,      &to GENSHIN,        RT0 RT4,     DEF,                          COMBO_TERM_FAST)
-ZMK_COMBO(mouseL,       HRC_LPAR,           RM2 RM3,     DEF,                          COMBO_TERM_FAST)
+//ZMK_COMBO(mouseL,       HRC_LPAR,           RM2 RM3,     DEF,                          COMBO_TERM_FAST)
 
 //utilities
 ZMK_COMBO(move_window,  &kp LG(LS(LEFT)),   LT3 LT2,     DEF,                          COMBO_TERM_FAST)
