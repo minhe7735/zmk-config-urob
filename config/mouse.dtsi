@@ -87,6 +87,12 @@
     )
 
 
+// for(int row = 0; row < 5; ++row){
+//   for(int col = 0; col < 3; ++col){
+//     DEF_POINTS(LMT + (row * col + col),  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, col, row);
+//   }
+// }
+
 //vertical left
 DEF_POINTS(LMT1,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 0, 0)
 DEF_POINTS(LMT2,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 1, 0)
@@ -103,6 +109,13 @@ DEF_POINTS(LMT12, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 2, 3)
 DEF_POINTS(LMT13, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 0, 4)
 DEF_POINTS(LMT14, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 1, 4)
 DEF_POINTS(LMT15, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 2, 4)
+
+
+// for(int row = 0; row < 3; ++row){
+//   for(int col = 0; col < 5; ++col){
+//     DEF_POINTS(RMT1,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, col, row);
+//   }
+// }
 
 //horizontal right
 DEF_POINTS(RMT1,  M_LH_DIV + 1080, M_SH_DIV + 429, M_L_DIV, M_S_DIV, 0, 0)
