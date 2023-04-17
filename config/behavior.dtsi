@@ -219,7 +219,7 @@ ZMK_BEHAVIOR(mouse_dance, tap_dance,
 
 #define MAKE_TD_MOD_MORPHS(NAME, MASKED, KEY) \
     ZMK_BEHAVIOR(NAME, tap_dance, \
-        tapping-term-ms = <200>; \
+        tapping-term-ms = <300>; \
         bindings = <MASKED>, <KEY>; \
     )
 
