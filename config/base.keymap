@@ -28,10 +28,10 @@
 /* Keymap */
 
 ZMK_LAYER(base,
-    X_LT     &kp Q          &kp W          &kp F           &kp P           &kp B             X_MT     &mt_wheel SCROLL_UP J      &mt_wheel SCROLL_LEFT L       &mt_mouse MOVE_UP U      &mt_wheel SCROLL_RIGHT Y    &kp SEMI      X_RT
-    X_LM     &hml LGUI A    &hml LALT R    &hml LSHFT S    &hml LCTRL T    &kp G             X_MM     &mt_wheel SCROLL_DOWN M    &hmr_cml 0 N                  &hmr_smd 0 E             &hmr_amr 0 I                &hml LGUI O   X_RM
-    X_LB     &kp Z          &kp X          &kp C           &kp D           &kp V             X_MB     &kp K                      &kp H                         &kp COMMA                &kp DOT                     &kp FSLH      X_RB
-    X_LH                                                   &smart_shft     &lt SYM SPACE     X_MH     &lt NUM BACKSPACE          &mt LS(LC(LEFT_ALT)) ENTER                                                                       X_RH
+    X_LT     &mm_Q            &mm_W            &mm_F             &mm_P             &mm_B             X_MT     &su_mm_J 0 0         &sl_mm_L 0 0                  &mu_mm_U 0 0      &sr_mm_Y 0 0     &kp SEMI          X_RT
+    X_LM     &gui_mm_A 0 0    &alt_mm_R 0 0    &shft_mm_S 0 0    &ctrl_mm_T 0 0    &mm_G             X_MM     &sd_mm_M 0 0         &ctrl_mm_N 0 0                &shft_mm_E 0 0    &alt_mm_I 0 0    &gui_mm_O 0 0     X_RM
+    X_LB     &mm_Z            &mm_X            &mm_C             &mm_D             &mm_V             X_MB     &mm_K                &mm_H                         &kp COMMA         &kp DOT          &kp FSLH          X_RB
+    X_LH                                                         &smart_shft       &lt SYM SPACE     X_MH     &lt NUM BACKSPACE    &mt LS(LC(LEFT_ALT)) ENTER                                                         X_RH
 )
 
 ZMK_LAYER(sym,
