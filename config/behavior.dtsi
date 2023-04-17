@@ -213,8 +213,8 @@ ZMK_BEHAVIOR(mouse_dance, tap_dance,
 #define MAKE_MOD_MORPHS(NAME, KEY, MORPH) \
     ZMK_BEHAVIOR(NAME, mod_morph, \
         bindings = <KEY>, <MORPH>; \
-        mods = <(MOD_LSFT|MOD_LCTL|MOD_RALT|MOD_RGUI)>, \
-        keep-mods = <(MOD_LSFT|MOD_LCTL|MOD_RALT|MOD_RGUI)>;; \
+        mods = <(MOD_LSFT|MOD_LCTL|MOD_RALT|MOD_LGUI)>, \
+        keep-mods = <(MOD_LSFT|MOD_LCTL|MOD_RALT|MOD_LGUI)>; \
     )
 
 #define MAKE_TD_MOD_MORPHS(NAME, KEY) \
