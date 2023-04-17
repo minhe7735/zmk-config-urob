@@ -212,71 +212,70 @@ ZMK_BEHAVIOR(mouse_dance, tap_dance,
 /*hrm mod morphs*/
 #define MAKE_MOD_MORPHS(NAME, KEY, MORPH) \
     ZMK_BEHAVIOR(NAME, mod_morph, \
-    bindings = <KEY>, <MORPH>; \
-    mods = <(MOD_LSFT|MOD_LCTL|MOD_RALT|MOD_RGUI)>, \
-    keep-mods = <(MOD_LSFT|MOD_LCTL|MOD_RALT|MOD_RGUI)>;; \
-)
+        bindings = <KEY>, <MORPH>; \
+        mods = <(MOD_LSFT|MOD_LCTL|MOD_RALT|MOD_RGUI)>, \
+        keep-mods = <(MOD_LSFT|MOD_LCTL|MOD_RALT|MOD_RGUI)>;; \
+    )
 
 #define MAKE_TD_MOD_MORPHS(NAME, KEY) \
     ZMK_BEHAVIOR(NAME, tap_dance, \
-    tapping-term-ms = <200>; \
-    bindings = <&none>, <KEY> \
+        tapping-term-ms = <200>; \
+        bindings = <&none>, <KEY>; \
+    )
 
-)
+MAKE_TD_MOD_MORPHS(td_A, &kp A)
+MAKE_TD_MOD_MORPHS(td_B, &kp B)
+MAKE_TD_MOD_MORPHS(td_C, &kp C)
+MAKE_TD_MOD_MORPHS(td_D, &kp D)
+MAKE_TD_MOD_MORPHS(td_E, &kp E)
+MAKE_TD_MOD_MORPHS(td_F, &kp F)
+MAKE_TD_MOD_MORPHS(td_G, &kp G)
+MAKE_TD_MOD_MORPHS(td_H, &kp H)
+MAKE_TD_MOD_MORPHS(td_I, &kp I)
+MAKE_TD_MOD_MORPHS(td_J, &kp J)
+MAKE_TD_MOD_MORPHS(td_K, &kp K)
+MAKE_TD_MOD_MORPHS(td_L, &kp L)
+MAKE_TD_MOD_MORPHS(td_M, &kp M)
+MAKE_TD_MOD_MORPHS(td_N, &kp N)
+MAKE_TD_MOD_MORPHS(td_O, &kp O)
+MAKE_TD_MOD_MORPHS(td_P, &kp P)
+MAKE_TD_MOD_MORPHS(td_Q, &kp Q)
+MAKE_TD_MOD_MORPHS(td_R, &kp R)
+MAKE_TD_MOD_MORPHS(td_S, &kp S)
+MAKE_TD_MOD_MORPHS(td_T, &kp T)
+MAKE_TD_MOD_MORPHS(td_U, &kp U)
+MAKE_TD_MOD_MORPHS(td_V, &kp V)
+MAKE_TD_MOD_MORPHS(td_W, &kp W)
+MAKE_TD_MOD_MORPHS(td_X, &kp X)
+MAKE_TD_MOD_MORPHS(td_Y, &kp Y)
+MAKE_TD_MOD_MORPHS(td_Z, &kp Z)
 
-MAKE_TD_MOD_MORPHS(td_A, &kp A);
-MAKE_TD_MOD_MORPHS(td_B, &kp B);
-MAKE_TD_MOD_MORPHS(td_C, &kp C);
-MAKE_TD_MOD_MORPHS(td_D, &kp D);
-MAKE_TD_MOD_MORPHS(td_E, &kp E);
-MAKE_TD_MOD_MORPHS(td_F, &kp F);
-MAKE_TD_MOD_MORPHS(td_G, &kp G);
-MAKE_TD_MOD_MORPHS(td_H, &kp H);
-MAKE_TD_MOD_MORPHS(td_I, &kp I);
-MAKE_TD_MOD_MORPHS(td_J, &kp J);
-MAKE_TD_MOD_MORPHS(td_K, &kp K);
-MAKE_TD_MOD_MORPHS(td_L, &kp L);
-MAKE_TD_MOD_MORPHS(td_M, &kp M);
-MAKE_TD_MOD_MORPHS(td_N, &kp N);
-MAKE_TD_MOD_MORPHS(td_O, &kp O);
-MAKE_TD_MOD_MORPHS(td_P, &kp P);
-MAKE_TD_MOD_MORPHS(td_Q, &kp Q);
-MAKE_TD_MOD_MORPHS(td_R, &kp R);
-MAKE_TD_MOD_MORPHS(td_S, &kp S);
-MAKE_TD_MOD_MORPHS(td_T, &kp T);
-MAKE_TD_MOD_MORPHS(td_U, &kp U);
-MAKE_TD_MOD_MORPHS(td_V, &kp V);
-MAKE_TD_MOD_MORPHS(td_W, &kp W);
-MAKE_TD_MOD_MORPHS(td_X, &kp X);
-MAKE_TD_MOD_MORPHS(td_Y, &kp Y);
-MAKE_TD_MOD_MORPHS(td_Z, &kp Z);
-
-MAKE_MOD_MORPHS(mm_A, &kp A, &td_A);
-MAKE_MOD_MORPHS(mm_B, &kp B, &td_B);
-MAKE_MOD_MORPHS(mm_C, &kp C, &td_C);
-MAKE_MOD_MORPHS(mm_D, &kp D, &td_D);
-MAKE_MOD_MORPHS(mm_E, &kp E, &td_E);
-MAKE_MOD_MORPHS(mm_F, &kp F, &td_F);
-MAKE_MOD_MORPHS(mm_G, &kp G, &td_G);
-MAKE_MOD_MORPHS(mm_H, &kp H, &td_H);
-MAKE_MOD_MORPHS(mm_I, &kp I, &td_I);
-MAKE_MOD_MORPHS(mm_J, &kp J, &td_J);
-MAKE_MOD_MORPHS(mm_K, &kp K, &td_K);
-MAKE_MOD_MORPHS(mm_L, &kp L, &td_L);
-MAKE_MOD_MORPHS(mm_M, &kp M, &td_M);
-MAKE_MOD_MORPHS(mm_N, &kp N, &td_N);
-MAKE_MOD_MORPHS(mm_O, &kp O, &td_O);
-MAKE_MOD_MORPHS(mm_P, &kp P, &td_P);
-MAKE_MOD_MORPHS(mm_Q, &kp Q, &td_Q);
-MAKE_MOD_MORPHS(mm_R, &kp R, &td_R);
-MAKE_MOD_MORPHS(mm_S, &kp S, &td_S);
-MAKE_MOD_MORPHS(mm_T, &kp T, &td_T);
-MAKE_MOD_MORPHS(mm_U, &kp U, &td_U);
-MAKE_MOD_MORPHS(mm_V, &kp V, &td_V);
-MAKE_MOD_MORPHS(mm_W, &kp W, &td_W);
-MAKE_MOD_MORPHS(mm_X, &kp X, &td_X);
-MAKE_MOD_MORPHS(mm_Y, &kp Y, &td_Y);
-MAKE_MOD_MORPHS(mm_Z, &kp Z, &td_Z);
+MAKE_MOD_MORPHS(mm_A, &kp A, &td_A)
+MAKE_MOD_MORPHS(mm_B, &kp B, &td_B)
+MAKE_MOD_MORPHS(mm_C, &kp C, &td_C)
+MAKE_MOD_MORPHS(mm_D, &kp D, &td_D)
+MAKE_MOD_MORPHS(mm_E, &kp E, &td_E)
+MAKE_MOD_MORPHS(mm_F, &kp F, &td_F)
+MAKE_MOD_MORPHS(mm_G, &kp G, &td_G)
+MAKE_MOD_MORPHS(mm_H, &kp H, &td_H)
+MAKE_MOD_MORPHS(mm_I, &kp I, &td_I)
+MAKE_MOD_MORPHS(mm_J, &kp J, &td_J)
+MAKE_MOD_MORPHS(mm_K, &kp K, &td_K)
+MAKE_MOD_MORPHS(mm_L, &kp L, &td_L)
+MAKE_MOD_MORPHS(mm_M, &kp M, &td_M)
+MAKE_MOD_MORPHS(mm_N, &kp N, &td_N)
+MAKE_MOD_MORPHS(mm_O, &kp O, &td_O)
+MAKE_MOD_MORPHS(mm_P, &kp P, &td_P)
+MAKE_MOD_MORPHS(mm_Q, &kp Q, &td_Q)
+MAKE_MOD_MORPHS(mm_R, &kp R, &td_R)
+MAKE_MOD_MORPHS(mm_S, &kp S, &td_S)
+MAKE_MOD_MORPHS(mm_T, &kp T, &td_T)
+MAKE_MOD_MORPHS(mm_U, &kp U, &td_U)
+MAKE_MOD_MORPHS(mm_V, &kp V, &td_V)
+MAKE_MOD_MORPHS(mm_W, &kp W, &td_W)
+MAKE_MOD_MORPHS(mm_X, &kp X, &td_X)
+MAKE_MOD_MORPHS(mm_Y, &kp Y, &td_Y)
+MAKE_MOD_MORPHS(mm_Z, &kp Z, &td_Z)
 
 MAKE_MT(gui_mm_A,  &kp,  &mm_A)
 MAKE_MT(alt_mm_R,  &kp,  &mm_R)
