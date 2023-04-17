@@ -10,7 +10,9 @@
 #define X_RM  &kp LS(TAB)
 #define X_RB  &kp C_VOL_UP
 
-#define X_LH  &mkp MB1  // thumb row, left
+// #define X_LH  &mkp MB1  // thumb row, left
+#define X_LH  &key_repeat  // thumb row, left
+
 #define X_RH  &mouse_dance  // thumb row, right
 
 #define CONFIG_WIRELESS 1
