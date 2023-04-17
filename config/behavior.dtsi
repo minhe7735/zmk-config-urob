@@ -19,7 +19,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 MAKE_HRM(hmr_cml, &cml, &kp, KEYS_L THUMBS)  // right-hand HRMs + move left
 MAKE_HRM(hmr_smd, &smd, &kp, KEYS_L THUMBS)  // right-hand HRMs + move down
 MAKE_HRM(hmr_amr, &amr, &kp, KEYS_L THUMBS)  // right-hand HRMs + move right
-MAKE_HRM(hmr_mouse_tp, &kp, &sl, KEYS_L THUMBS) // to mouse layer combo
+//MAKE_HRM(hmr_mouse_tp, &kp, &sl, KEYS_L THUMBS) // to mouse layer combo
 
 
 /* Caps-word */
@@ -59,6 +59,32 @@ MAKE_MM(amr, MOVE_RIGHT, RALT)
 
 MAKE_MT(mt_mouse, &mmv, &kp) // hold: move, tap: key
 MAKE_MT(mt_wheel, &mwh, &kp) // hold: scroll, tap: key
+
+MAKE_MT(LMT1_mt,  &LMT1,  &LMT4)
+MAKE_MT(LMT2_mt,  &LMT2,  &LMT5)
+MAKE_MT(LMT3_mt,  &LMT3,  &LMT6)
+MAKE_MT(LMT13_mt, &LMT13, &LMT10)
+MAKE_MT(LMT14_mt, &LMT14, &LMT11)
+MAKE_MT(LMT15_mt, &LMT15, &LMT12)
+
+MAKE_MT(RMT1_mt,  &RMT1,  &RMT2)
+MAKE_MT(RMT5_mt,  &RMT5,  &RMT4)
+MAKE_MT(RMT6_mt,  &RMT6,  &RMT7)
+MAKE_MT(RMT10_mt, &RMT10, &RMT9)
+MAKE_MT(RMT11_mt, &RMT11, &RMT12)
+MAKE_MT(RMT15_mt, &RMT15, &RMT14)
+
+MAKE_MT(mt_layer, &to, &sl)
+
+MAKE_MT(mt_mtp_up,      &mmv, &RMT3)
+MAKE_MT(mt_mtp_down,    &mmv, &RMT8)
+MAKE_MT(mt_mtp_left,    &mmv, &RMT7)
+MAKE_MT(mt_mtp_right,   &mmv, &RMT9)
+MAKE_MT(mt_mtp_s_up,    &mwh, &RMT1)
+MAKE_MT(mt_mtp_s_down,  &mwh, &RMT6)
+MAKE_MT(mt_mtp_s_left,  &mwh, &RMT2)
+MAKE_MT(mt_mtp_s_right, &mwh, &RMT4)
+
 
 // Alt+Tab swapper, requires PR #1366
 ZMK_BEHAVIOR(swapper, tri_state,
@@ -173,3 +199,10 @@ DEF_POINTS(RMT12, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 1, 
 DEF_POINTS(RMT13, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 2, 2)
 DEF_POINTS(RMT14, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 3, 2)
 DEF_POINTS(RMT15, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 4, 2)
+
+/*tap dance*/
+
+ZMK_BEHAVIOR(mouse_dance, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&sl MOUSE>, <&to MOUSE>;  // reverse this for sticky-num on single tap
+)
