@@ -28,10 +28,10 @@
 /* Keymap */
 
 ZMK_LAYER(base,
-    X_LT     &mm_Q            &mm_W            &mm_F             &mm_P             &mm_B             X_MT     &su_mm_J SCROLL_UP 0         &sl_mm_L SCROLL_LEFT 0                  &mu_mm_U MOVE_UP 0      &sr_mm_Y SCROLL_RIGHT 0     &kp SEMI          X_RT
-    X_LM     &gui_mm_A LGUI 0    &alt_mm_R LALT 0    &shft_mm_S LSHFT 0    &ctrl_mm_T LCTRL 0    &mm_G             X_MM     &sd_mm_M SCROLL_DOWN 0         &ctrl_mm_N 0 0                &shft_mm_E 0 0    &alt_mm_I 0 0    &gui_mm_O RGUI 0     X_RM
-    X_LB     &mm_Z            &mm_X            &mm_C             &mm_D             &mm_V             X_MB     &mm_K                &mm_H                         &kp COMMA         &kp DOT          &kp FSLH          X_RB
-    X_LH                                                         &smart_shft       &lt SYM SPACE     X_MH     &lt NUM BACKSPACE    &mt LS(LC(LEFT_ALT)) ENTER                                                         X_RH
+    X_LT     &mm_Q               &mm_W               &mm_F                 &mm_P                 &mm_B             X_MT     &su_mm_J SCROLL_UP 0      &sl_mm_L SCROLL_LEFT 0        &mu_mm_U MOVE_UP 0    &sr_mm_Y SCROLL_RIGHT 0    &kp SEMI             X_RT
+    X_LM     &gui_mm_A LGUI 0    &alt_mm_R LALT 0    &shft_mm_S LSHFT 0    &ctrl_mm_T LCTRL 0    &mm_G             X_MM     &sd_mm_M SCROLL_DOWN 0    &ctrl_mm_N 0 0                &shft_mm_E 0 0        &alt_mm_I 0 0              &gui_mm_O RGUI 0     X_RM
+    X_LB     &mm_Z               &mm_X               &mm_C                 &mm_D                 &mm_V             X_MB     &mm_K                     &mm_H                         &kp COMMA             &kp DOT                    &kp FSLH             X_RB
+    X_LH                                                                   &smart_shft           &lt SYM SPACE     X_MH     &lt NUM BACKSPACE         &mt LS(LC(LEFT_ALT)) ENTER                                                                          X_RH
 )
 
 ZMK_LAYER(sym,

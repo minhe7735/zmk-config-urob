@@ -278,18 +278,18 @@ MAKE_MOD_MORPHS(mm_X, &kp X, &td_X);
 MAKE_MOD_MORPHS(mm_Y, &kp Y, &td_Y);
 MAKE_MOD_MORPHS(mm_Z, &kp Z, &td_Z);
 
-MAKE_MT(gui_mm_A,  &kp LGUI,   &mm_A)
-MAKE_MT(alt_mm_R,  &kp LALT,   &mm_R)
-MAKE_MT(shft_mm_S, &kp LSHFT,  &mm_S)
-MAKE_MT(ctrl_mm_T, &kp LCTRL,  &mm_T)
+MAKE_MT(gui_mm_A,  &kp,  &mm_A)
+MAKE_MT(alt_mm_R,  &kp,  &mm_R)
+MAKE_MT(shft_mm_S, &kp,  &mm_S)
+MAKE_MT(ctrl_mm_T, &kp,  &mm_T)
 
-MAKE_MT(ctrl_mm_N,  &cml,     &mm_N)
-MAKE_MT(shft_mm_E,  &smd,     &mm_E)
-MAKE_MT(alt_mm_I,   &amr,     &mm_I)
-MAKE_MT(gui_mm_O,   &kp RGUI, &mm_O)
+MAKE_MT(ctrl_mm_N,  &cml, &mm_N)
+MAKE_MT(shft_mm_E,  &smd, &mm_E)
+MAKE_MT(alt_mm_I,   &amr, &mm_I)
+MAKE_MT(gui_mm_O,   &kp,  &mm_O)
 
-MAKE_MT(su_mm_J, &mwh SCROLL_UP,    &mm_J)
-MAKE_MT(sl_mm_L, &mwh SCROLL_LEFT,  &mm_L)
-MAKE_MT(mu_mm_U, &mmv MOVE_UP,      &mm_U)
-MAKE_MT(sr_mm_Y, &mwh SCROLL_RIGHT, &mm_Y)
-//MAKE_MT(sd_mm_M, &mwh SCROLL_DOWN,  &mm_M)
+MAKE_MT(su_mm_J, &mwh, &mm_J)
+MAKE_MT(sl_mm_L, &mwh, &mm_L)
+MAKE_MT(mu_mm_U, &mmv, &mm_U)
+MAKE_MT(sr_mm_Y, &mwh, &mm_Y)
+MAKE_MT(sd_mm_M, &mwh, &mm_M)
