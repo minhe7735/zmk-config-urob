@@ -36,3 +36,11 @@ ZMK_COMBO(maximize,     &kp LG(UP),         LT3 LT2 LT1, DEF,                   
 ZMK_COMBO(copy,         &kp LC(C),          LB3 LB2,     DEF,                          COMBO_TERM_FAST)
 ZMK_COMBO(paste,        &kp LC(V),          LB2 LB1,     DEF,                          COMBO_TERM_FAST)
 ZMK_COMBO(cut,          &kp LC(X),          LB3 LB1,     DEF,                          COMBO_TERM_FAST)
+
+//reset
+ZMK_COMBO(lReset,       &sys_reset,         LH2 LH1 LH0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(rReset,       &sys_reset,         RH0 RH1 RH2,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+
+//bootloader
+ZMK_COMBO(lBootL,       &bootloader,        LH2 LH1 LH0 LB0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(rBootL,       &bootloader,        RH0 RH1 RH2 RB0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
