@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/leader.h>
 
 #include "../zmk-nodefree-config/helper.h"
 
@@ -35,24 +36,24 @@ ZMK_LAYER(base,
 )
 
 ZMK_LAYER(sym,
-    X_LT     &kp EXCL       &kp AT        &kp LEFT_BRACE          &kp RIGHT_BRACE          &kp PIPE         X_MT     &kp GRAVE    &kp TILDE    &kp LESS_THAN    &kp GREATER_THAN    &kp BACKSLASH         X_RT
-    X_LM     &kp HASH       &kp DOLLAR    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp COLON        X_MM     &kp PLUS     &kp MINUS    &kp SLASH        &kp ASTRK           &kp SINGLE_QUOTE      X_RM
-    X_LB     &kp PERCENT    &kp CARET     &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &kp QUESTION     X_MB     &kp AMPS     &kp EQUAL    &kp UNDER        &kp PERIOD          &kp DOUBLE_QUOTES     X_RB
-    X_LH                                                          XXX                      ___              X_MH     ___          XXX                                                                     X_RH
+    X_LT     XXX    XXX    &kp LEFT_BRACE          &kp RIGHT_BRACE          &kp PIPE         X_MT     &kp GRAVE    &kp TILDE    &kp LESS_THAN    &kp GREATER_THAN    &kp BACKSLASH         X_RT
+    X_LM     XXX    XXX    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp COLON        X_MM     &kp PLUS     &kp MINUS    &kp SLASH        &kp ASTRK           &kp SINGLE_QUOTE      X_RM
+    X_LB     XXX    XXX    &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &kp QUESTION     X_MB     &kp AMPS     &kp EQUAL    &kp UNDER        &kp PERIOD          &kp DOUBLE_QUOTES     X_RB
+    X_LH                                           XXX                      ___              X_MH     XXX          XXX                                                                     X_RH
 )
 
 ZMK_LAYER(num,
-    X_LT     XXX        &kp N7          &kp N8           &kp N9           XXX               X_MT     XXX                   &kp LS(LA(LC(LEFT)))    &kp UP      &kp LS(LA(LC(RIGHT)))    XXX                      X_RT
-    X_LM     &kp LGUI   &hml LALT N4    &hml LSHFT N5    &hml LCTRL N6    XXX               X_MM     &kp LS(LA(LC(UP)))    &kp LEFT                &kp DOWN    &kp RIGHT                &kp LS(LA(LC(DOWN)))     X_RM
-    X_LB     XXX        &kp N1          &kp N2           &kp N3           &kp LC(MINUS)     X_MB     &kp LC(EQUAL)         &kp HOME                ___         &kp END                  XXX                      X_RB
-    &kp DOT                                              &kp N0           ___               X_MH     ___                   XXX                                                                                   X_RH
+    X_LT     XXX        &kp N7          &kp N8           &kp N9           XXX                 X_MT     XXX              &kp PG_UP          &kp UP             &kp PG_DOWN        XXX          X_RT
+    X_LM     &kp LGUI   &hml LALT N4    &hml LSHFT N5    &hml LCTRL N6    XXX                 X_MM     XXX              &hmr RCTRL LEFT    &hmr RSHFT DOWN    &hmr RALT RIGHT    &kp RGUI     X_RM
+    X_LB     XXX        &kp N1          &kp N2           &kp N3           &kp LC(MINUS)       X_MB     &kp LC(EQUAL)    &kp HOME           ___                &kp END            XXX          X_RB
+    &kp DOT                                              &kp N0           LS(LC(LEFT_ALT))    X_MH     ___              XXX                                                                   X_RH
 )
 
 ZMK_LAYER(fn,
     &kp F1        &kp F2          &kp F3          &kp F4          &kp F5          &kp F6                X_MT     &kp F7        &kp F8         &kp F9    &kp F10   &kp F11     &kp F12
     &bt BT_CLR    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4          X_MM     XXX           XXX            XXX       XXX       XXX         X_RM
     X_LB          XXX             XXX             XXX             XXX             &ext_power EP_OFF     X_MB     XXX           XXX            XXX       XXX       XXX         X_RB
-    X_LH                                                          &bootloader     &sys_reset            X_MH     &sys_reset    &bootloader                                       X_RH
+    X_LH                                                          &bootloader     &sys_reset            X_MH     &sys_reset    &bootloader                                    X_RH
 )
 
 ZMK_LAYER(genshin,
