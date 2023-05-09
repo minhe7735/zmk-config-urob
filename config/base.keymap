@@ -28,10 +28,10 @@
 /* Keymap */
 
 ZMK_LAYER(base,
-    X_LT     &kp Q          &kp W          &kp F           &kp P           &kp B             X_MT     &mt_wheel SCROLL_UP J      &mt_wheel SCROLL_LEFT L       &mt_mouse MOVE_UP U      &mt_wheel SCROLL_RIGHT Y    &kp SEMI      X_RT
-    X_LM     &hml LGUI A    &hml LALT R    &hml LSHFT S    &hml LCTRL T    &kp G             X_MM     &mt_wheel SCROLL_DOWN M    &hmr_cml 0 N                  &hmr_smd 0 E             &hmr_amr 0 I                &hml LGUI O   X_RM
-    X_LB     &kp Z          &kp X          &kp C           &kp D           &kp V             X_MB     &kp K                      &kp H                         &kp COMMA                &kp DOT                     &kp FSLH      X_RB
-    X_LH                                                   &smart_shft     &lt SYM SPACE     X_MH     &lt NUM BACKSPACE          &mt LS(LC(LEFT_ALT)) ENTER                                                                       X_RH
+    X_LT     &kp Q    &kp W    &kp F    &kp P    &kp B     X_MT     &mt_wheel SCROLL_UP J      &mt_wheel SCROLL_LEFT L       &mt_mouse MOVE_UP U      &mt_wheel SCROLL_RIGHT Y    &kp SEMI      X_RT
+    X_LM     &kp A    &kp R    &kp S    &kp T    &kp G     X_MM     &mt_wheel SCROLL_DOWN M    &mt_mouse MOVE_LEFT N         &mt_mouse MOVE_DOWN E    &mt_mouse MOVE_RIGHT I         &kp O         X_RM
+    X_LB     &kp Z    &kp X    &kp C    &kp D    &kp V     X_MB     &kp K                      &kp H                         &kp COMMA                &kp DOT                     &kp FSLH      X_RB
+    X_LH                 &smart_shft     &lt SYM SPACE     X_MH     &lt NUM BACKSPACE          &mt LS(LC(LEFT_ALT)) ENTER                                                                       X_RH
 )
 
 ZMK_LAYER(sym,
@@ -42,9 +42,9 @@ ZMK_LAYER(sym,
 )
 
 ZMK_LAYER(num,
-    X_LT     XXX        &kp N7          &kp N8           &kp N9           XXX                     X_MT     XXX              &kp PG_UP          &kp UP             &kp PG_DN          XXX          X_RT
-    X_LM     &kp LGUI   &hml LALT N4    &hml LSHFT N5    &hml LCTRL N6    XXX                     X_MM     XXX              &hmr RCTRL LEFT    &hmr RSHFT DOWN    &hmr RALT RIGHT    &kp RGUI     X_RM
-    X_LB     XXX        &kp N1          &kp N2           &kp N3           &kp LC(MINUS)           X_MB     &kp LC(EQUAL)    &kp HOME           ___                &kp END            XXX          X_RB
+    X_LT     XXX    &kp N7    &kp N8    &kp N9    XXX                     X_MT     XXX              &kp PG_UP          &kp UP             &kp PG_DN          XXX          X_RT
+    X_LM     XXX    &kp N4    &kp N5    &kp N6    XXX                     X_MM     XXX              &kp LEFT    &kp DOWN    &kp RIGHT    XXX     X_RM
+    X_LB     XXX    &kp N1    &kp N2    &kp N3    &kp LC(MINUS)           X_MB     &kp LC(EQUAL)    &kp HOME           ___                &kp END            XXX          X_RB
     &kp DOT                                              &kp N0           &kp LS(LC(LEFT_ALT))    X_MH     ___              XXX                                                                   X_RH
 )
 
