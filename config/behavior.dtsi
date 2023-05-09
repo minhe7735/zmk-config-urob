@@ -219,3 +219,17 @@ leader
   ╰───────────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────────╯
               ╰─────────────╯ ╰─────────────╯
 */
+
+#define LEADER(NAME, KEYS, BINDINGS, LAYERS) \
+    leader_##NAME { \
+        key-positions = <KEYS>; \
+        bindings = <BINDINGS>; \
+        layers = <LAYERS>; \
+    };
+
+leader_sequences {
+
+    compatible = "zmk,leader-sequences";
+
+    LEADER(close, LB2 RT1 RM4 LM2 RM2, &kp LA(F4), BASE)
+};
