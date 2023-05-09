@@ -26,7 +26,7 @@
 ZMK_COMBO(normal,       &to DEF,            RT2 RT3,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
 ZMK_COMBO(functions,    &sl FN,             RB2 RB3,     DEF,                          COMBO_TERM_FAST)
 ZMK_COMBO(genshin,      &to GENSHIN,        RT0 RT4,     DEF,                          COMBO_TERM_FAST)
-ZMK_COMBO(leaderKey,    &mkp MB1,           RT1 RM1,     DEF,                          COMBO_TERM_FAST)
+ZMK_COMBO(leaderKey,    &leader,           RT1 RM1,     DEF,                          COMBO_TERM_FAST)
 
 //utilities
 ZMK_COMBO(move_window,  &kp LG(LS(LEFT)),   LT3 LT2,     DEF,                          COMBO_TERM_FAST)
