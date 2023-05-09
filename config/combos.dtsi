@@ -26,7 +26,7 @@
 ZMK_COMBO(left_control,   &kp LCTRL,           LT1 LM1,     DEF SYM NUM FN GENSHIN,  COMBO_TERM_FAST)
 ZMK_COMBO(right_control,  &kp RCTRL,           RT1 RM1,     DEF SYM NUM FN GENSHIN,  COMBO_TERM_FAST)
 ZMK_COMBO(left_shift,     &kp LSHFT,           LT2 LM2,     DEF SYM NUM FN GENSHIN,  COMBO_TERM_FAST)
-ZMK_COMBO(right_shift,    &kp RSHFT,           RT2 LM2,     DEF SYM NUM FN GENSHIN,  COMBO_TERM_FAST)
+ZMK_COMBO(right_shift,    &kp RSHFT,           RT2 RM2,     DEF SYM NUM FN GENSHIN,  COMBO_TERM_FAST)
 ZMK_COMBO(left_alt,       &kp LALT,            LT3 LM3,     DEF SYM NUM FN GENSHIN,  COMBO_TERM_FAST)
 ZMK_COMBO(right_alt,      &kp RALT,            RT3 RM3,     DEF SYM NUM FN GENSHIN,  COMBO_TERM_FAST)
 ZMK_COMBO(left_gui,       &kp LGUI,            LT4 LM4,     DEF SYM NUM FN GENSHIN,  COMBO_TERM_FAST)
