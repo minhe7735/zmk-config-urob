@@ -41,4 +41,4 @@ ZMK_COMBO(rReset,       &sys_reset,         RH0 RH1 RH2,     DEF SYM NUM FN GENS
 
 //bootloader
 ZMK_COMBO(lBootL,       &bootloader,        LH2 LH1 LH0 LB0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(rBootL,       &bootloader,        RH0 RH1 RH2 RB0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(rBootL,       &bootloader,        RH2 RH1 RH2 RB0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
