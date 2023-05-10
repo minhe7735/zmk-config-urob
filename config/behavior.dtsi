@@ -232,4 +232,4 @@ leader
         compatible = "zmk,leader-sequences";
         LEADER(close, LB2 RT1 RM4 LM2 RM2, &kp LA(F4), DEF)
     };
-}
+};
