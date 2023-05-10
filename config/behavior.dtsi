@@ -225,6 +225,7 @@ leader
         key-positions = <KEYS>; \
         bindings = <BINDINGS>; \
         layers = <LAYERS>; \
+        immediate-trigger; \
     };
 
 /{ 
