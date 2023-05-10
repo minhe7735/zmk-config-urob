@@ -227,8 +227,12 @@ leader
         layers = <LAYERS>; \
     };
 
-leader_sequences {
+leader-sequences {
+		compatible = "zmk,leader-sequences";
 
-    compatible = "zmk,leader-sequences";
-    LEADER(close, LB2 RT1 RM4 LM2 RM2, &kp LA(F4), DEF)
-};
+		leader_seq_one {
+			key-positions = <LB2 RT1 RM4 LM2 RM2>;
+			bindings = <&kp LA(F4)>;
+			layers = <DEF>;
+		};
+	};
