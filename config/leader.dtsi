@@ -1,0 +1,61 @@
+/*
+leader
+/*                                      42 KEY MATRIX / LAYOUT MAPPING
+
+  ╭────────────────────────┬────────────────────────╮ 
+  │  0   1   2   3   4   5 │  6   7   8   9  10  11 │ 
+  │ 12  13  14  15  16  17 │ 18  19  20  21  22  23 │ 
+  │ 24  25  26  27  28  29 │ 30  31  32  33  34  35 │ 
+  ╰───────────╮ 36  37  38 │ 39  40  41 ╭───────────╯ 
+              ╰────────────┴────────────╯             */
+
+#pragma once
+
+#define _B  5  // left-top row
+#define _P  4
+#define _F  3
+#define _W  2
+#define _Q  1
+#define _ESC  0
+#define _J  6  // right-top row
+#define _L  7
+#define _U  8
+#define _Y  9
+#define _; 10
+#define _G 17  // left-middle row
+#define _T 16
+#define _S 15
+#define _R 14
+#define _A 13
+#define _TAB 12
+#define _M 18  // right-middle row
+#define _N 19
+#define _E 20
+#define _I 21
+#define _O 22
+#define _V 29  // left-bottom row
+#define _D 28
+#define _C 27
+#define _X 26
+#define _Z 25
+#define _ 24
+#define _K 30  // right-bottom row
+#define _H 31
+#define _, 32
+#define _. 33
+
+
+#define LEADER(NAME, KEYS, BINDINGS, LAYERS) \
+    leader_##NAME { \
+        key-positions = <KEYS>; \
+        bindings = <BINDINGS>; \
+        layers = <LAYERS>; \
+        immediate-trigger; \
+    };
+
+/{ 
+    leader_sequences {
+        compatible = "zmk,leader-sequences";
+        LEADER(close, _E _X _I _T, &kp LA(F4), DEF)
+    };
+};
