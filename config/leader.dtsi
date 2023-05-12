@@ -21,7 +21,7 @@ leader
 #define _L  7
 #define _U  8
 #define _Y  9
-#define _; 10
+#define _SEMI 10
 #define _G 17  // left-middle row
 #define _T 16
 #define _S 15
@@ -40,8 +40,8 @@ leader
 #define _Z 25
 #define _K 30  // right-bottom row
 #define _H 31
-#define _, 32
-#define _. 33
+#define _COMMA 32
+#define _DOT 33
 
 
 #define LEADER(NAME, KEYS, BINDINGS, LAYERS) \
