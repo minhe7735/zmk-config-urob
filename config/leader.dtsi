@@ -15,7 +15,7 @@ leader
 #define _P  4
 #define _F  3
 #define _W  2
-#define _Q  1
+#define _FSLASH  1
 #define _ESC  0
 #define _J  6  // right-top row
 #define _L  7
@@ -42,6 +42,7 @@ leader
 #define _H 31
 #define _COMMA 32
 #define _DOT 33
+#define _Q 33
 
 
 #define LEADER(NAME, KEYS, BINDINGS, LAYERS) \
