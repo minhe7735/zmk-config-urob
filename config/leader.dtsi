@@ -38,7 +38,6 @@ leader
 #define _C 27
 #define _X 26
 #define _Z 25
-#define _ 24
 #define _K 30  // right-bottom row
 #define _H 31
 #define _, 32
@@ -52,6 +51,13 @@ leader
         layers = <LAYERS>; \
         immediate-trigger; \
     };
+
+#define MACRO_MAKER(NAME, SEQUENCE) \
+    ZMK_BEHAVIOR(NAME, macro, \
+        bindings = <&macro_tap SEQUENCE>, \
+    )
+
+MACRO_MAKER(test, &kp T &kp E &kp S &kp T)
 
 /{ 
     leader_sequences {
