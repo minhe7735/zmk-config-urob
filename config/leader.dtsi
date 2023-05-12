@@ -54,7 +54,7 @@ leader
 
 #define MACRO_MAKER(NAME, SEQUENCE) \
     ZMK_BEHAVIOR(NAME, macro, \
-        bindings = <&macro_tap SEQUENCE>, \
+        bindings = <&macro_tap SEQUENCE>; \
     )
 
 MACRO_MAKER(test, &kp T &kp E &kp S &kp T)
