@@ -7,7 +7,7 @@
 #define X_LB  &kp C_VOL_DN
 
 #define X_RT  &kp LC(BACKSPACE)
-#define X_RM  &mt C_MUTE LS(TAB)
+#define X_RM  &kp ENTER
 #define X_RB  &kp C_VOL_UP
 
 #define X_LH  &leader  // thumb row, left

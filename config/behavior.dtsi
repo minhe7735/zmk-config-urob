@@ -57,7 +57,7 @@ MAKE_MM(amr, MOVE_RIGHT, RALT)
         bindings = <HOLD>, <TAP>; \
     )
 
-MAKE_MT(lt_repeat, &mo, &key_repeat)
+MAKE_MT(mt_repeat, &kp, &key_repeat)
 
 MAKE_MT(mt_mouse, &mmv, &kp) // hold: move, tap: key
 MAKE_MT(mt_wheel, &mwh, &kp) // hold: scroll, tap: key
