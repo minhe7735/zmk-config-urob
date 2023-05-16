@@ -9,6 +9,9 @@
     ignore-modifiers;
 };
 
+&mt {
+    flavor = "tap-preferred";
+};
 &lt {  // layer-tap
     flavor = "balanced";
     tapping-term-ms = <200>;
