@@ -44,7 +44,7 @@ ZMK_LAYER(sym,
 
 ZMK_LAYER(num,
     X_LT     XXX        &kp N7          &kp N8           &kp N9           XXX                     X_MT     XXX              &kp PG_UP          &kp UP             &kp PG_DN          XXX          X_RT
-    X_LM     &kp LGUI   &hml LALT N4    &hml LSHFT N5    &hml LCTRL N6    XXX                     X_MM     XXX              &hmr RCTRL LEFT    &hmr RSHFT DOWN    &hmr RALT RIGHT    &kp RGUI     X_RM
+    X_LM     XXX        &kp N4          &kp N5           &kp N6           XXX                     X_MM     XXX              &kp LEFT           &kp DOWN           &kp RIGHT          XXX          X_RM
     X_LB     XXX        &kp N1          &kp N2           &kp N3           &kp LC(MINUS)           X_MB     &kp LC(EQUAL)    &kp HOME           ___                &kp END            XXX          X_RB
     &kp DOT                                              &kp N0           &kp LS(LC(LEFT_ALT))    X_MH     ___              XXX                                                                   X_RH
 )
