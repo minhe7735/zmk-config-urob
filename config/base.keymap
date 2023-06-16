@@ -30,7 +30,7 @@
 
 ZMK_LAYER(base,
     X_LT     &kp FSLH       &kp W          &kp F           &kp P           &kp B             X_MT     &mt_wheel SCROLL_UP J      &mt_wheel SCROLL_LEFT L       &mt_mouse MOVE_UP U      &mt_wheel SCROLL_RIGHT Y    &kp SEMI      X_RT
-    X_LM     &hml LGUI A    &hml LALT R    &hml LSHFT S    &hml LCTRL T    &kp G             X_MM     &mt_wheel SCROLL_DOWN M    &hmr_cml 0 N                  &hmr_smd 0 E             &hmr_amr 0 I                &hml LGUI O   X_RM
+    X_LM     &kp A          &kp R          &kp S           &kp T           &kp G             X_MM     &mt_wheel SCROLL_DOWN M    &mt_mouse MOVE_LEFT N         &mt_mouse MOVE_DOWN E    &mt_mouse MOVE_RIGHT   I    &kp O         X_RM
     X_LB     &kp Z          &mt LC(X) X    &mt LC(C) C     &kp D           &mt LC(V) V       X_MB     &kp K                      &kp H                         &kp COMMA                &kp DOT                     &kp Q         X_RB
     X_LH                                                   &smart_shft     &lt SYM SPACE     X_MH     &lt NUM BACKSPACE          &mt LS(LC(LEFT_ALT)) ENTER                                                                       X_RH
 )
