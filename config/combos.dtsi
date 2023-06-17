@@ -19,7 +19,6 @@ ZMK_COMBO(normal,       &to DEF,            RT2 RT3,     DEF SYM NUM FN GENSHIN 
 ZMK_COMBO(functions,    &sl FN,             RB2 RB3,     DEF,                          COMBO_TERM_FAST)
 
 //utilities
-ZMK_COMBO(move_window,  &kp LG(LS(LEFT)),   LT3 LT2,     DEF,                          COMBO_TERM_FAST)
 ZMK_COMBO(maximize,     &kp LG(UP),         LT3 LT2 LT1, DEF,                          COMBO_TERM_FAST)
 
 
@@ -32,12 +31,14 @@ ZMK_COMBO(lBootL,       &bootloader,        LH2 LH1 LH0 LB0,     DEF SYM NUM FN 
 ZMK_COMBO(rBootL,       &bootloader,        RH2 RH1 RH2 RB0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
 
 //keys
-ZMK_COMBO(lCtrlBSpace,  &kp LC(BACKSPACE),  LM3 LM2,             DEF SYM NUM)
-ZMK_COMBO(lGui,         &kp LGUI ,          LT4 LM4,             DEF SYM NUM)
-ZMK_COMBO(lAlt,         &kp LALT,           LT3 LM3,             DEF SYM NUM)
-ZMK_COMBO(lShift,       &kp LSHFT,          LT2 LM2,             DEF SYM NUM)
-ZMK_COMBO(lCtrl,        &kp LCTRL,          LT1 LM1,             DEF SYM NUM)
-ZMK_COMBO(rGui,         &kp LGUI,           RT4 RM4,             DEF SYM NUM)
-ZMK_COMBO(rAlt,         &kp LALT,           RT3 RM3,             DEF SYM NUM)
-ZMK_COMBO(rShift,       &kp LSHFT,          RT2 RM2,             DEF SYM NUM)
-ZMK_COMBO(rCtrl,        &kp LCTRL,          RT1 RM1,             DEF SYM NUM)
+ZMK_COMBO(lCtrlBSpace,  &kp LC(BACKSPACE),  LM3 LM2,             DEF SYM NUM,                  COMBO_TERM_FAST)
+ZMK_COMBO(lGui,         &kp LGUI ,          LT4 LM4,             DEF SYM NUM,                  COMBO_TERM_FAST)
+ZMK_COMBO(lAlt,         &kp LALT,           LT3 LM3,             DEF SYM NUM,                  COMBO_TERM_FAST)
+ZMK_COMBO(lShift,       &kp LSHFT,          LT2 LM2,             DEF SYM NUM,                  COMBO_TERM_FAST)
+ZMK_COMBO(lCtrl,        &kp LCTRL,          LT1 LM1,             DEF SYM NUM,                  COMBO_TERM_FAST)
+ZMK_COMBO(rGui,         &kp LGUI,           RT4 RM4,             DEF SYM NUM,                  COMBO_TERM_FAST)
+ZMK_COMBO(rAlt,         &kp LALT,           RT3 RM3,             DEF SYM NUM,                  COMBO_TERM_FAST)
+ZMK_COMBO(rShift,       &kp LSHFT,          RT2 RM2,             DEF SYM NUM,                  COMBO_TERM_FAST)
+ZMK_COMBO(rCtrl,        &kp LCTRL,          RT1 RM1,             DEF SYM NUM,                  COMBO_TERM_FAST)
+ZMK_COMBO(esc,          &kp ESCAPE,         LT3 LT2,             DEF SYM NUM,                  COMBO_TERM_FAST)
+
