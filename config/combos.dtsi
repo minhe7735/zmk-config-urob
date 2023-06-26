@@ -41,4 +41,5 @@ ZMK_COMBO(rAlt,         &kp LALT,           RT3 RM3,             DEF SYM NUM,   
 ZMK_COMBO(rShift,       &kp LSHFT,          RT2 RM2,             DEF SYM NUM,                  COMBO_TERM_FAST)
 ZMK_COMBO(rCtrl,        &kp LCTRL,          RT1 RM1,             DEF SYM NUM,                  COMBO_TERM_FAST)
 ZMK_COMBO(esc,          &kp ESCAPE,         LT3 LT2,             DEF SYM NUM,                  COMBO_TERM_FAST)
+ZMK_COMBO(tab,          &kp TAB,            LT2 LT1,             DEF SYM NUM,                  COMBO_TERM_FAST)
 
