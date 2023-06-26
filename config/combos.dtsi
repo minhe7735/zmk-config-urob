@@ -11,8 +11,8 @@
 #undef COMBO_HOOK
 #define COMBO_HOOK global - quick - tap - ms = <100>;
 
-#define COMBO_TERM_FAST 20
-#define COMBO_TERM_SLOW 35
+#define COMBO_TERM_FAST 20;
+#define COMBO_TERM_SLOW 35;
 
 // layers
 ZMK_COMBO(normal, &to DEF, RT2 RT3, DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
