@@ -9,36 +9,34 @@
 
 // use global-quick-tap-ms for combos (requires PR 1387)
 #undef COMBO_HOOK
-#define COMBO_HOOK global-quick-tap-ms = <100>;
+#define COMBO_HOOK global - quick - tap - ms = <100>;
 
 #define COMBO_TERM_FAST 20
 #define COMBO_TERM_SLOW 35
 
-//layers
-ZMK_COMBO(normal,       &to DEF,            RT2 RT3,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(functions,    &sl FN,             RB2 RB3,     DEF,                          COMBO_TERM_FAST)
+// layers
+ZMK_COMBO(normal, &to DEF, RT2 RT3, DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(functions, &sl FN, RB2 RB3, DEF, COMBO_TERM_FAST)
 
-//utilities
-ZMK_COMBO(maximize,     &kp LG(UP),         LT3 LT2 LT1, DEF,                          COMBO_TERM_FAST)
+// utilities
+ZMK_COMBO(maximize, &kp LG(UP), LT3 LT2 LT1, DEF, COMBO_TERM_FAST)
 
+// reset
+ZMK_COMBO(lReset, &sys_reset, LH2 LH1 LH0, DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(rReset, &sys_reset, RH0 RH1 RH2, DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
 
-//reset
-ZMK_COMBO(lReset,       &sys_reset,         LH2 LH1 LH0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(rReset,       &sys_reset,         RH0 RH1 RH2,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+// bootloader
+ZMK_COMBO(lBootL, &bootloader, LH2 LH1 LH0 LB0, DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(rBootL, &bootloader, RH2 RH1 RH2 RB0, DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
 
-//bootloader
-ZMK_COMBO(lBootL,       &bootloader,        LH2 LH1 LH0 LB0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(rBootL,       &bootloader,        RH2 RH1 RH2 RB0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
-
-//keys
-ZMK_COMBO(lCtrlBSpace,  &kp LC(BACKSPACE),  LM3 LM2,             DEF SYM NUM,                  COMBO_TERM_FAST)
-ZMK_COMBO(lGui,         &kp LGUI ,          LT4 LM4,             DEF SYM NUM,                  COMBO_TERM_FAST)
-ZMK_COMBO(lAlt,         &kp LALT,           LT3 LM3,             DEF SYM NUM,                  COMBO_TERM_FAST)
-ZMK_COMBO(lShift,       &kp LSHFT,          LT2 LM2,             DEF SYM NUM,                  COMBO_TERM_FAST)
-ZMK_COMBO(lCtrl,        &kp LCTRL,          LT1 LM1,             DEF SYM NUM,                  COMBO_TERM_FAST)
-ZMK_COMBO(rGui,         &kp LGUI,           RT4 RM4,             DEF SYM NUM,                  COMBO_TERM_FAST)
-ZMK_COMBO(rAlt,         &kp LALT,           RT3 RM3,             DEF SYM NUM,                  COMBO_TERM_FAST)
-ZMK_COMBO(rShift,       &kp LSHFT,          RT2 RM2,             DEF SYM NUM,                  COMBO_TERM_FAST)
-ZMK_COMBO(rCtrl,        &kp LCTRL,          RT1 RM1,             DEF SYM NUM,                  COMBO_TERM_FAST)
-ZMK_COMBO(esc,          &kp ESCAPE,         LT3 LT2,             DEF SYM NUM,                  COMBO_TERM_FAST)
-
+// keys
+ZMK_COMBO(lCtrlBSpace, &kp LC(BACKSPACE), LM3 LM2, DEF SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(lGui, &kp LGUI, LT4 LM4, DEF SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(lAlt, &kp LALT, LT3 LM3, DEF SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(lShift, &kp LSHFT, LT2 LM2, DEF SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(lCtrl, &kp LCTRL, LT1 LM1, DEF SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(rGui, &kp LGUI, RT4 RM4, DEF SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(rAlt, &kp LALT, RT3 RM3, DEF SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(rShift, &kp LSHFT, RT2 RM2, DEF SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(rCtrl, &kp LCTRL, RT1 RM1, DEF SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(esc, &kp ESCAPE, LT3 LT2, DEF SYM NUM, COMBO_TERM_FAST)
