@@ -1,0 +1,4 @@
+/{
+    behaviors{
+        ZMK_SEND_STRING(hello_world, "Hello, world!")};
+};
