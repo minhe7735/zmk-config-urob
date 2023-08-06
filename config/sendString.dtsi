@@ -3,9 +3,6 @@
     {
         zmk, character_map = &charmap_us;
     };
-};
-
-/{
     behaviors{
         ZMK_SEND_STRING(hello_world, "Hello, world!")};
 };
