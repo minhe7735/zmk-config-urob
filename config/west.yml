@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: minhe7735
-      revision: leader-key
+      revision: sendString
       import: app/west.yml
   self:
     path: config
