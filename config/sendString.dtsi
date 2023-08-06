@@ -1,11 +1,9 @@
 /{
-    chosen
-    {
-        zmk, character_map = &charmap_us;
+    chosen {
+        zmk,character_map = &charmap_us;
     };
 
-    behaviors
-    {
+    behaviors {
         ZMK_SEND_STRING(hello_world_us, "Hello, world!")
     };
 };
