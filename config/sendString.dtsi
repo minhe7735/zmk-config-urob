@@ -1,5 +1,4 @@
 /{
-    char string[32];
     snprintf(string, sizeof(string), "Battery level is %u%%", zmk_battery_state_of_charge());
 
     chosen {
