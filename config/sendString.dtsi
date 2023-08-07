@@ -1,9 +1,20 @@
+
+
+
+
 /{
+    ZMK_BUILD_ASSERT_CHARACTER_MAP_CHOSEN();
+    ...
+
+    char string[32];
+    snprintf(string, sizeof(string), "Battery level is %u%%", zmk_battery_state_of_charge());
+    
     chosen {
         zmk,character_map = &charmap_us;
     };
 
     behaviors {
         ZMK_SEND_STRING(hello_world_us, "Hello, world!")
+        zmk_send_string(&ZMK_SEND_STRING_CONFIG_DEFAULT, position, string)
     };
 };
