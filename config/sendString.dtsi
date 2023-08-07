@@ -1,6 +1,4 @@
 /{
-    snprintf(string, sizeof(string), "Battery level is %u%%", zmk_battery_state_of_charge());
-
     chosen {
         zmk,character_map = &charmap_us;
     };
