@@ -5,6 +5,5 @@
 
     behaviors {
         ZMK_SEND_STRING(hello_world_us, "Hello, world!")
-        zmk_send_string(&ZMK_SEND_STRING_CONFIG_DEFAULT, position, string)
     };
 };
