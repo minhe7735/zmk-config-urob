@@ -15,7 +15,7 @@
 #define COMBO_TERM_SLOW 35
 
 //layers
-ZMK_COMBO(normal,       &to DEF,            RT2 RT3,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(normal,       &to DEF,            RT2 RT3,     DEF SYM NUM FN, COMBO_TERM_FAST)
 ZMK_COMBO(functions,    &sl FN,             RB2 RB3,     DEF,                          COMBO_TERM_FAST)
 
 //utilities
@@ -23,12 +23,12 @@ ZMK_COMBO(maximize,     &kp LG(UP),         LT3 LT2 LT1, DEF,                   
 
 
 //reset
-ZMK_COMBO(lReset,       &sys_reset,         LH2 LH1 LH0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(rReset,       &sys_reset,         RH0 RH1 RH2,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(lReset,       &sys_reset,         LH2 LH1 LH0,     DEF SYM NUM FN, COMBO_TERM_FAST)
+ZMK_COMBO(rReset,       &sys_reset,         RH0 RH1 RH2,     DEF SYM NUM FN, COMBO_TERM_FAST)
 
 //bootloader
-ZMK_COMBO(lBootL,       &bootloader,        LH2 LH1 LH0 LB0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
-ZMK_COMBO(rBootL,       &bootloader,        RH2 RH1 RH2 RB0,     DEF SYM NUM FN GENSHIN MOUSE, COMBO_TERM_FAST)
+ZMK_COMBO(lBootL,       &bootloader,        LH2 LH1 LH0 LB0,     DEF SYM NUM FN, COMBO_TERM_FAST)
+ZMK_COMBO(rBootL,       &bootloader,        RH2 RH1 RH2 RB0,     DEF SYM NUM FN, COMBO_TERM_FAST)
 
 //keys
 ZMK_COMBO(lCtrlBSpace,  &kp LC(BACKSPACE),  LM3 LM2,             DEF SYM NUM,                  COMBO_TERM_FAST)
