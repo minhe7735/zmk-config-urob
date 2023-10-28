@@ -6,7 +6,7 @@
 #define X_RH  &mkp MB2  // thumb row, right
 
 /* activate bluetooth */
-//#define CONFIG_WIRELESS 1
+#define CONFIG_WIRELESS 1
 
 /* source the main keymap */
 #include "base.keymap"

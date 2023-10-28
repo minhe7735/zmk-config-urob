@@ -16,10 +16,10 @@
 
 //layers
 ZMK_COMBO(normal,       &to DEF,            RT2 RT3,     DEF SYM NUM FN, COMBO_TERM_FAST)
-ZMK_COMBO(functions,    &sl FN,             RB2 RB3,     DEF,                          COMBO_TERM_FAST)
+ZMK_COMBO(functions,    &sl FN,             RB2 RB3,     DEF,            OMBO_TERM_FAST)
 
 //utilities
-ZMK_COMBO(maximize,     &kp LG(UP),         LT3 LT2 LT1, DEF,                          COMBO_TERM_FAST)
+ZMK_COMBO(maximize,     &kp LG(UP),         LT3 LT2 LT1, DEF,            COMBO_TERM_FAST)
 
 
 //reset
