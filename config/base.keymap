@@ -30,7 +30,7 @@
 
 ZMK_LAYER(base,
     X_LT     &kp FSLH       &kp W          &kp F           &kp P           &kp B             X_MT     &mt_wheel SCROLL_UP J      &mt_wheel SCROLL_LEFT L       &mt_mouse MOVE_UP U      &mt_wheel SCROLL_RIGHT Y    &kp SEMI      X_RT
-    X_LM     &kp A          &kp R          &kp S           &kp T           &kp G             X_MM     &mt_wheel SCROLL_DOWN M    &mt_mouse MOVE_LEFT N         &mt_mouse MOVE_DOWN E    &mt_mouse MOVE_RIGHT   I    &kp O         X_RM
+    X_LM     &hml LGUI A    &hml LALT R    &hml LSHFT S    &hml LCTRL T    &kp G             X_MM     &mt_wheel SCROLL_DOWN M    &hmr_cml 0 N                  &hmr_smd 0 E             &hmr_amr 0 I                &hml LGUI O   X_RM
     X_LB     &kp Z          &mt LC(X) X    &mt LC(C) C     &kp D           &mt LC(V) V       X_MB     &kp K                      &kp H                         &kp COMMA                &kp DOT                     &kp Q         X_RB
     X_LH                                                   &smart_shft     &lt SYM SPACE     X_MH     &lt NUM BACKSPACE          &mt LS(LC(LEFT_ALT)) ENTER                                                                       X_RH
 )
@@ -54,18 +54,4 @@ ZMK_LAYER(fn,
     X_LM     XXX    &kp F4    &kp F5    &kp F6         &kp F11        X_MM     &bt BT_CLR    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    X_RM
     X_LB     XXX    &kp F1    &kp F2    &kp F3         &kp F12        X_MB     XXX           XXX             XXX             XXX             XXX             X_RB
     X_LH                                &bootloader    &sys_reset     X_MH     &sys_reset    &bootloader                                                     X_RH
-)
-
-ZMK_LAYER(genshin,
-    &kp ESCAPE    &kp Q     &kp W     &kp E     &kp R        &kp T      X_MT     XXX    XXX    XXX    XXX    XXX     X_RT
-    &kp LCTRL     &kp A     &kp S     &kp D     &kp F        &kp X      X_MM     XXX    XXX    XXX    XXX    XXX     X_RM
-    &kp LSHIFT    &kp N1    &kp N2    &kp N3    &kp N4       &kp N5     X_MB     XXX    XXX    XXX    XXX    XXX     X_RB
-    &sk LALT                                    &kp SPACE    &kp M      X_MH     XXX    XXX                          X_RH
-)
-
-ZMK_LAYER(mouse,
-    X_LT     XXX    &LMT1_mt 0 0     &LMT2_mt 0 0      &LMT3_mt 0 0     XXX          X_MT     &mt_mtp_s_up SCROLL_UP 0        &mt_mtp_s_left SCROLL_LEFT 0    &mt_mtp_up MOVE_UP 0        &mt_mtp_s_right SCROLL_RIGHT 0    &RMT5      X_RT
-    X_LM     XXX    &LMT7            &LMT8             &LMT9            XXX          X_MM     &mt_mtp_s_down SCROLL_DOWN 0    &mt_mtp_left MOVE_LEFT 0        &mt_mtp_down MOVE_DOWN 0    &mt_mtp_right MOVE_RIGHT 0        &RMT10     X_RM
-    X_LB     XXX    &LMT13_mt 0 0    &LMT14_mt 0 0     &LMT15_mt 0 0    XXX          X_MB     &RMT11                          &RMT12                          &RMT13                      &RMT14                            &RMT15     X_RB
-    &mkp MB3                                           &mkp MB2         &mkp MB1     X_MH     &mkp MB1                        &mkp MB2                                                                                                 &mkp MB3
 )
