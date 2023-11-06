@@ -9,7 +9,7 @@
     #define X_LM
 #endif
 #if !defined X_LB  // bottom row, left
-    #define X_LB
+    #define X_LB//
 #endif
 #if !defined X_LH  // thumb row, left
     #define X_LH
