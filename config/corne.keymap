@@ -11,7 +11,7 @@
 #define X_RB  &kp C_VOL_UP
 
 #define X_LH  &leader  // thumb row, left
-#define X_RH  &mouse_dance  // thumb row, right
+#define X_RH  &none  // thumb row, right
 
 #define CONFIG_WIRELESS 1
 

@@ -204,7 +204,7 @@ DEF_POINTS(RMT15, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 4, 
 
 /*tap dance*/
 
-ZMK_BEHAVIOR(mouse_dance, tap_dance,
-    tapping-term-ms = <200>;
-    bindings = <&sl MOUSE>, <&to MOUSE>;  // reverse this for sticky-num on single tap
-)
+// ZMK_BEHAVIOR(mouse_dance, tap_dance,
+//     tapping-term-ms = <200>;
+//     bindings = <&sl MOUSE>, <&to MOUSE>;  // reverse this for sticky-num on single tap
+// )
