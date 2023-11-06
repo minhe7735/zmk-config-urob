@@ -124,7 +124,6 @@ MAKE_MMTP(RMT15_morph, &RMT15, &RMT14)
 	behaviors {
 		mmvt: mmvt {
 			compatible = "zmk,behavior-mouse-move";
-			label = "MOUSE_MOVE_TP";
 			#binding-cells = <1>;
 			delay-ms = <0>;
 			time-to-max-speed-ms = <0>;
