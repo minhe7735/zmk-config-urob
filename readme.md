@@ -112,7 +112,7 @@ ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
-    global-quick-tap-ms = <150>;         // requires PR #1387
+    equire-prior-idle-ms = <150>;         // requires PR #1387
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
     hold-trigger-on-release;             // requires PR #1423
@@ -123,7 +123,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
-    global-quick-tap-ms = <150>;         // requires PR #1387
+    equire-prior-idle-ms = <150>;         // requires PR #1387
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
     hold-trigger-on-release;             // requires PR #1423
@@ -132,13 +132,13 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 
 Final note: the config above uses syntax introduced in [PR
 #1387](https://github.com/zmkfirmware/zmk/pull/1387), which decouples the
-`quick-tap-ms` timeout from the `global-quick-tap-ms` timeout. Without the PR,
-one can replace `global-quick-tap-ms = <150>` with `global-quick-tap` for a
+`quick-tap-ms` timeout from the `equire-prior-idle-ms` timeout. Without the PR,
+one can replace `equire-prior-idle-ms = <150>` with `global-quick-tap` for a
 similar effect (`global-quick-tap` will use the regular `quick-tap-ms` timeout
 in this case).
 
 My personal [ZMK fork](https://github.com/urob/zmk) includes both the
-global-quick-tap-ms PR and the hold-trigger-on-release PR (along with a few
+equire-prior-idle-ms PR and the hold-trigger-on-release PR (along with a few
 other PRs). If you prefer to maintain your own fork with a custom selection of
 PRs, you might find this [ZMK-centric introduction to
 Git](https://gist.github.com/urob/68a1e206b2356a01b876ed02d3f542c7) helpful.
