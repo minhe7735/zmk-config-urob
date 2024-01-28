@@ -18,16 +18,16 @@
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
-&mmv { // mouse move
-  acceleration-exponent = <1>;
-  time-to-max-speed-ms = <1500>;
-  delay-ms = <0>;
+&mmv {
+  acceleration-exponent = <1>;      // 1
+  time-to-max-speed-ms = <1500>;    // 40
+  delay-ms = <0>;                   // 0
 };
 
-&msc { // mouse wheel
-  acceleration-exponent = <1>;
-  time-to-max-speed-ms = <5000>;
-  delay-ms = <0>;
+&msc {
+  acceleration-exponent = <1>;      // 0
+  time-to-max-speed-ms = <5000>;    // 40
+  delay-ms = <0>;                   // 10
 };
 
 &caps_word {  // mods deactivate caps-word, requires PR #1441
