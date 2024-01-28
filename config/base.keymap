@@ -20,7 +20,7 @@
 
 #define QUICK_TAP_MS 175
 
-// #include "sendString.dtsi"
+#include "sendString.dtsi"
 #include "leader.dtsi"
 #include "conf_changes.dtsi"
 #include "mouse.dtsi"
