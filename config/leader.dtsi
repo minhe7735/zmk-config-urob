@@ -63,7 +63,7 @@ leader
 /{ 
     leader_sequences {
         compatible = "zmk,leader-sequences";
-        LEADER(close, _E _X _I _T, &kp LA(F4), DEF);
+        LEADER(close, _E _X _I _T, &kp LA(F4), DEF)
         // LEADER(hello, _H _W, &hello_world, DEF);
 
         // //  buildProjects:
