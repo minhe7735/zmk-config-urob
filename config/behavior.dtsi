@@ -19,7 +19,6 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 MAKE_HRM(hmr_cml, &cml, &kp, KEYS_L THUMBS)  // right-hand HRMs + move left
 MAKE_HRM(hmr_smd, &smd, &kp, KEYS_L THUMBS)  // right-hand HRMs + move down
 MAKE_HRM(hmr_amr, &amr, &kp, KEYS_L THUMBS)  // right-hand HRMs + move right
-//MAKE_HRM(hmr_mouse_tp, &kp, &sl, KEYS_L THUMBS) // to mouse layer combo
 
 
 /* Caps-word */
@@ -61,31 +60,6 @@ MAKE_MT(mt_repeat, &kp, &key_repeat)
 
 MAKE_MT(mt_mouse, &mmv, &kp) // hold: move, tap: key
 MAKE_MT(mt_wheel, &msc, &kp) // hold: scroll, tap: key
-//
-// MAKE_MT(LMT1_mt,  &LMT1,  &LMT4)
-// MAKE_MT(LMT2_mt,  &LMT2,  &LMT5)
-// MAKE_MT(LMT3_mt,  &LMT3,  &LMT6)
-// MAKE_MT(LMT13_mt, &LMT13, &LMT10)
-// MAKE_MT(LMT14_mt, &LMT14, &LMT11)
-// MAKE_MT(LMT15_mt, &LMT15, &LMT12)
-
-// MAKE_MT(RMT1_mt,  &RMT1,  &RMT2)
-// MAKE_MT(RMT5_mt,  &RMT5,  &RMT4)
-// MAKE_MT(RMT6_mt,  &RMT6,  &RMT7)
-// MAKE_MT(RMT10_mt, &RMT10, &RMT9)
-// MAKE_MT(RMT11_mt, &RMT11, &RMT12)
-// MAKE_MT(RMT15_mt, &RMT15, &RMT14)
-
-// MAKE_MT(mt_layer, &to, &sl)
-
-// MAKE_MT(mt_mtp_up,      &mmv, &RMT3)
-// MAKE_MT(mt_mtp_down,    &mmv, &RMT8)
-// MAKE_MT(mt_mtp_left,    &mmv, &RMT7)
-// MAKE_MT(mt_mtp_right,   &mmv, &RMT9)
-// MAKE_MT(mt_mtp_s_up,    &msc, &RMT1)
-// MAKE_MT(mt_mtp_s_down,  &msc, &RMT6)
-// MAKE_MT(mt_mtp_s_left,  &msc, &RMT2)
-// MAKE_MT(mt_mtp_s_right, &msc, &RMT4)
 
 
 // Alt+Tab swapper, requires PR #1366
@@ -94,117 +68,3 @@ ZMK_BEHAVIOR(swapper, tri_state,
     ignored-key-positions = <LT2>;
 )
 
-
-// /*mod morphs for mouse tp*/
-
-// #define MAKE_MMTP(NAME, POINT1, POINT2) \
-//     ZMK_BEHAVIOR(NAME, mod_morph, \
-//         bindings = <POINT1>, <POINT2>; \
-//         mods = <(MOD_LSFT|MOD_RSFT)>; \
-//     )
-
-// MAKE_MMTP(LMT1_morph, &LMT1, &LMT4)
-// MAKE_MMTP(LMT2_morph, &LMT2, &LMT5)
-// MAKE_MMTP(LMT3_morph, &LMT3, &LMT6)
-// MAKE_MMTP(LMT13_morph, &LMT13, &LMT10)
-// MAKE_MMTP(LMT14_morph, &LMT14, &LMT11)
-// MAKE_MMTP(LMT15_morph, &LMT15, &LMT12)
-
-// MAKE_MMTP(RMT1_morph, &RMT1, &RMT2)
-// MAKE_MMTP(RMT5_morph, &RMT5, &RMT4)
-// MAKE_MMTP(RMT6_morph, &RMT6, &RMT7)
-// MAKE_MMTP(RMT10_morph, &RMT10, &RMT9)
-// MAKE_MMTP(RMT11_morph, &RMT11, &RMT12)
-// MAKE_MMTP(RMT15_morph, &RMT15, &RMT14)
-
-
-// /*teleport cursor*/
-
-// / {
-// 	behaviors {
-// 		mmvt: mmvt {
-// 			compatible = "zmk,behavior-mouse-move";
-// 			label = "MOUSE_MOVE_TP";
-// 			#binding-cells = <1>;
-// 			delay-ms = <0>;
-// 			time-to-max-speed-ms = <0>;
-// 			acceleration-exponent = <0>;
-// 		};
-// 	};
-// };
-
-
-// #define M_START_Y &mmvt MOVE_VERT(-30000)// top left
-// #define M_START_X &mmvt MOVE_HOR(-30000)// top left
-// #define RES_LONG 1920
-// #define RES_SHORT 1080
-// #define SHORT_SEC 3
-// #define LONG_SEC 5
-// #define M_L_DIV (RES_LONG/LONG_SEC)
-// #define M_LH_DIV (M_L_DIV/2)
-// #define M_S_DIV (RES_SHORT/SHORT_SEC)
-// #define M_SH_DIV (M_S_DIV/2)
-// #define M_SCALE 10
-// #define OFFSET 429
-
-// #define DEF_POINTS(NAME, OFFSET_X, OFFSET_Y, DX, DY, MX, MY) \
-//     ZMK_BEHAVIOR(NAME, macro, \
-//         bindings = <&macro_tap M_START_X>, \
-//         <&macro_tap M_START_X>, \
-//         <&macro_tap M_START_X>, \
-//         <&macro_tap M_START_Y>, \
-//         <&macro_tap M_START_Y>, \
-//         <&macro_tap M_START_Y>, \
-//         <&macro_tap &mmvt MOVE_VERT((OFFSET_Y + MY * DY) * M_SCALE)>,\
-//         <&macro_tap &mmvt MOVE_VERT((OFFSET_Y + MY * DY) * M_SCALE)>,\
-//         <&macro_tap &mmvt MOVE_VERT((OFFSET_Y + MY * DY) * M_SCALE)>,\
-//         <&macro_tap &mmvt MOVE_HOR((OFFSET_X + MX * DX) * M_SCALE)>,\
-//         <&macro_tap &mmvt MOVE_HOR((OFFSET_X + MX * DX) * M_SCALE)>,\
-//         <&macro_tap &mmvt MOVE_HOR((OFFSET_X + MX * DX) * M_SCALE)> ;\
-//     )
-
-
-
-// //vertical left
-// DEF_POINTS(LMT1,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 0, 0)
-// DEF_POINTS(LMT2,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 1, 0)
-// DEF_POINTS(LMT3,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 2, 0)
-// DEF_POINTS(LMT4,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 0, 1)
-// DEF_POINTS(LMT5,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 1, 1)
-// DEF_POINTS(LMT6,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 2, 1)
-// DEF_POINTS(LMT7,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 0, 2)
-// DEF_POINTS(LMT8,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 1, 2)
-// DEF_POINTS(LMT9,  M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 2, 2)
-// DEF_POINTS(LMT10, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 0, 3)
-// DEF_POINTS(LMT11, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 1, 3)
-// DEF_POINTS(LMT12, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 2, 3)
-// DEF_POINTS(LMT13, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 0, 4)
-// DEF_POINTS(LMT14, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 1, 4)
-// DEF_POINTS(LMT15, M_SH_DIV, M_LH_DIV, M_S_DIV, M_L_DIV, 2, 4)
-
-
-
-
-// //horizontal right
-// DEF_POINTS(RMT1,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 0, 0)
-// DEF_POINTS(RMT2,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 1, 0)
-// DEF_POINTS(RMT3,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 2, 0)
-// DEF_POINTS(RMT4,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 3, 0)
-// DEF_POINTS(RMT5,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 4, 0)
-// DEF_POINTS(RMT6,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 0, 1)
-// DEF_POINTS(RMT7,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 1, 1)
-// DEF_POINTS(RMT8,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 2, 1)
-// DEF_POINTS(RMT9,  M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 3, 1)
-// DEF_POINTS(RMT10, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 4, 1)
-// DEF_POINTS(RMT11, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 0, 2)
-// DEF_POINTS(RMT12, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 1, 2)
-// DEF_POINTS(RMT13, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 2, 2)
-// DEF_POINTS(RMT14, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 3, 2)
-// DEF_POINTS(RMT15, M_LH_DIV + RES_SHORT, M_SH_DIV + OFFSET, M_L_DIV, M_S_DIV, 4, 2)
-
-/*tap dance*/
-
-// ZMK_BEHAVIOR(mouse_dance, tap_dance,
-//     tapping-term-ms = <200>;
-//     bindings = <&sl MOUSE>, <&to MOUSE>;  // reverse this for sticky-num on single tap
-// )

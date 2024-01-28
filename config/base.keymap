@@ -64,10 +64,3 @@ ZMK_LAYER(genshin,
     &kp LSHIFT    &kp N1    &kp N2    &kp N3    &kp N4       &kp N5     X_MB     XXX    XXX    XXX    XXX    XXX     X_RB
     &kp LALT                                    &kp SPACE    &kp M      X_MH     XXX    XXX                          X_RH
 )
-
-// ZMK_LAYER(mouse,
-//     X_LT     XXX    &LMT1_mt 0 0     &LMT2_mt 0 0      &LMT3_mt 0 0     XXX          X_MT     &mt_mtp_s_up SCROLL_UP 0        &mt_mtp_s_left SCROLL_LEFT 0    &mt_mtp_up MOVE_UP 0        &mt_mtp_s_right SCROLL_RIGHT 0    &RMT5      X_RT
-//     X_LM     XXX    &LMT7            &LMT8             &LMT9            XXX          X_MM     &mt_mtp_s_down SCROLL_DOWN 0    &mt_mtp_left MOVE_LEFT 0        &mt_mtp_down MOVE_DOWN 0    &mt_mtp_right MOVE_RIGHT 0        &RMT10     X_RM
-//     X_LB     XXX    &LMT13_mt 0 0    &LMT14_mt 0 0     &LMT15_mt 0 0    XXX          X_MB     &RMT11                          &RMT12                          &RMT13                      &RMT14                            &RMT15     X_RB
-//     &mkp MB3                                           &mkp MB2         &mkp MB1     X_MH     &mkp MB1                        &mkp MB2                                                                                                 &mkp MB3
-// )
