@@ -1,4 +1,8 @@
 / {
+    chosen {
+        zmk,character_map = &charmap_us;
+    };
+
     behaviors {
         hello_world: hello_world {
             compatible = "zmk,behavior-send-string";
