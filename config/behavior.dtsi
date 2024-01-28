@@ -60,7 +60,7 @@ MAKE_MM(amr, MOVE_RIGHT, RALT)
 MAKE_MT(mt_repeat, &kp, &key_repeat)
 
 MAKE_MT(mt_mouse, &mmv, &kp) // hold: move, tap: key
-MAKE_MT(mt_wheel, &mwh, &kp) // hold: scroll, tap: key
+MAKE_MT(mt_wheel, &msc, &kp) // hold: scroll, tap: key
 
 MAKE_MT(LMT1_mt,  &LMT1,  &LMT4)
 MAKE_MT(LMT2_mt,  &LMT2,  &LMT5)
@@ -82,10 +82,10 @@ MAKE_MT(mt_mtp_up,      &mmv, &RMT3)
 MAKE_MT(mt_mtp_down,    &mmv, &RMT8)
 MAKE_MT(mt_mtp_left,    &mmv, &RMT7)
 MAKE_MT(mt_mtp_right,   &mmv, &RMT9)
-MAKE_MT(mt_mtp_s_up,    &mwh, &RMT1)
-MAKE_MT(mt_mtp_s_down,  &mwh, &RMT6)
-MAKE_MT(mt_mtp_s_left,  &mwh, &RMT2)
-MAKE_MT(mt_mtp_s_right, &mwh, &RMT4)
+MAKE_MT(mt_mtp_s_up,    &msc, &RMT1)
+MAKE_MT(mt_mtp_s_down,  &msc, &RMT6)
+MAKE_MT(mt_mtp_s_left,  &msc, &RMT2)
+MAKE_MT(mt_mtp_s_right, &msc, &RMT4)
 
 
 // Alt+Tab swapper, requires PR #1366
