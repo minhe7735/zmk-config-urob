@@ -24,7 +24,7 @@
   delay-ms = <0>;
 };
 
-&mwh { // mouse wheel
+&msc { // mouse wheel
   acceleration-exponent = <1>;
   time-to-max-speed-ms = <5000>;
   delay-ms = <0>;
