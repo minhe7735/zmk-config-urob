@@ -28,6 +28,8 @@
 #include "extra_keys.h"
 #include "behavior.dtsi"
 
+/ { chosen { zmk,matrix_transform = &default_transform; }; };
+
 /* Keymap */
 
 ZMK_LAYER(base,
