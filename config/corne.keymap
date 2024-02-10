@@ -183,37 +183,37 @@
 
         sybmol {
             bindings = <
-&trans  &trans  &trans  &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(PIPE)     &kp GRAVE     &kp LS(TILDE)  &kp LS(LT)     &kp LS(GT)    &kp BSLH     &trans
-&trans  &trans  &trans  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)    &kp LS(PLUS)  &kp MINUS      &kp FSLH       &kp LS(STAR)  &kp SQT      &trans
-&trans  &trans  &trans  &kp LBKT      &kp RBKT      &kp LS(QMARK)    &kp LS(AMPS)  &kp EQUAL      &kp LS(UNDER)  &kp DOT       &kp LS(DQT)  &trans
-                        &trans        &trans        &trans           &trans        &trans         &trans
+&none  &none  &none  &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(PIPE)     &kp GRAVE     &kp LS(TILDE)  &kp LS(LT)     &kp LS(GT)    &kp BSLH     &none
+&none  &none  &none  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)    &kp LS(PLUS)  &kp MINUS      &kp FSLH       &kp LS(STAR)  &kp SQT      &none
+&none  &none  &none  &kp LBKT      &kp RBKT      &kp LS(QMARK)    &kp LS(AMPS)  &kp EQUAL      &kp LS(UNDER)  &kp DOT       &kp LS(DQT)  &none
+                     &none         &none         &none            &none         &none          &none
             >;
         };
 
         number {
             bindings = <
-&trans  &trans        &kp N7        &kp N8         &kp N9         &trans           &trans         &kp PG_UP        &kp UP          &kp PG_DN        &trans         &trans
-&trans  &kp LEFT_GUI  &hml LALT N4  &hml LSHFT N5  &hml LCTRL N6  &trans           &trans         &hmr RCTRL LEFT  &hmr RALT DOWN  &hmr RALT RIGHT  &kp RIGHT_GUI  &trans
-&trans  &trans        &kp N1        &kp N2         &kp N3         &kp LC(MINUS)    &kp LC(EQUAL)  &kp HOME         &trans          &kp END          &trans         &trans
-                                    &trans         &kp N0         &trans           &trans         &trans           &trans
+&none  &none         &kp N7        &kp N8         &kp N9         &none            &none          &kp PG_UP        &kp UP          &kp PG_DN        &none          &none
+&none  &kp LEFT_GUI  &hml LALT N4  &hml LSHFT N5  &hml LCTRL N6  &none            &none          &hmr RCTRL LEFT  &hmr RALT DOWN  &hmr RALT RIGHT  &kp RIGHT_GUI  &none
+&none  &none         &kp N1        &kp N2         &kp N3         &kp LC(MINUS)    &kp LC(EQUAL)  &kp HOME         &none           &kp END          &none          &none
+                                   &none          &kp N0         &none            &none          &none            &none
             >;
         };
 
         function {
             bindings = <
-&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10    &trans      &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
-&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12    &trans      &trans        &trans        &trans        &trans        &trans
-                        &trans  &trans  &trans     &trans      &trans        &trans
+&none  &none  &kp F7  &kp F8  &kp F9  &kp F10    &none       &none         &none         &none         &none         &none
+&none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
+&none  &none  &kp F1  &kp F2  &kp F3  &kp F12    &none       &none         &none         &none         &none         &none
+                      &none   &none   &none      &none       &none         &none
             >;
         };
 
         game {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E     &kp R      &kp T    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B    &trans  &trans  &trans  &trans  &trans  &trans
-                         &kp LALT  &kp SPACE  &kp M    &trans  &trans  &trans
+&kp ESC    &kp Q  &kp W  &kp E     &kp R      &kp T    &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G    &none  &none  &none  &none  &none  &none
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B    &none  &none  &none  &none  &none  &none
+                         &kp LALT  &kp SPACE  &kp M    &none  &none  &none
             >;
         };
     };
