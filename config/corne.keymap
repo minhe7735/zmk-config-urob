@@ -174,10 +174,10 @@
 
         base {
             bindings = <
-&kp ESC   &kp FSLH  &kp W  &kp F   &kp P         &kp B          &mt_wheel SCROLL_UP J    &mt_wheel SCROLL_LEFT L  &mt_mouse MOVE_UP U  &mt_wheel SCROLL_LEFT Y  &kp SEMI          &kp LC(BSPC)
-&kp BSPC  &kp A     &kp R  &kp S   &kp T         &kp G          &mt_wheel SCROLL_DOWN M  &hmr_cml 0 N             &hmr_smd 0 E         &hmr_amr 0 I             &hmr RIGHT_GUI O  &kp LS(TAB)
-&kp TAB   &kp Z     &kp X  &kp C   &kp D         &kp V          &kp K                    &kp H                    &kp COMMA            &kp DOT                  &kp Q             &kp C_VOL_UP
-                           &trans  &smart_shift  &lt 1 SPACE    &lt 2 BACKSPACE          &kp ENTER                &trans
+&kp ESC   &kp FSLH  &kp W  &kp F  &kp P         &kp B          &mt_wheel SCROLL_UP J    &mt_wheel SCROLL_LEFT L  &mt_mouse MOVE_UP U  &mt_wheel SCROLL_LEFT Y  &kp SEMI          &kp LC(BSPC)
+&kp BSPC  &kp A     &kp R  &kp S  &kp T         &kp G          &mt_wheel SCROLL_DOWN M  &hmr_cml 0 N             &hmr_smd 0 E         &hmr_amr 0 I             &hmr RIGHT_GUI O  &kp LS(TAB)
+&kp TAB   &kp Z     &kp X  &kp C  &kp D         &kp V          &kp K                    &kp H                    &kp COMMA            &kp DOT                  &kp Q             &kp C_VOL_UP
+                           &none  &smart_shift  &lt 1 SPACE    &lt 2 BACKSPACE          &kp ENTER                &none
             >;
         };
 
