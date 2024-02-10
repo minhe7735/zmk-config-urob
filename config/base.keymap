@@ -61,6 +61,6 @@ ZMK_LAYER(fn,
 ZMK_LAYER(genshin,
     &kp ESCAPE    &kp Q     &kp W     &kp E     &kp R        &kp T      X_MT     XXX    XXX    XXX    XXX    XXX     X_RT
     &kp LCTRL     &kp A     &kp S     &kp D     &kp F        &kp X      X_MM     XXX    XXX    XXX    XXX    XXX     X_RM
-    &kp LSHIFT    &kp N1    &kp N2    &kp N3    &kp N4       &kp N5     X_MB     XXX    XXX    XXX    XXX    XXX     X_RB
+    &kp LSHIFT    &kp Z     &kp X     &kp C     &kp V        &kp B      X_MB     XXX    XXX    XXX    XXX    XXX     X_RB
     &kp LALT                                    &kp SPACE    &kp M      X_MH     XXX    XXX                          X_RH
 )
