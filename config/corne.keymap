@@ -46,7 +46,11 @@
         cml: cml {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&mmv MOVE_LEFT &kp RCTRL>;
+            bindings =
+                <&macro_press>,
+                <&mmv MOVE_LEFT &kp RCTRL>,
+                <&macro_pause_for_release>,
+                <&macro_release>;
 
             label = "CML";
         };
@@ -54,7 +58,11 @@
         smd: smd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&mmv MOVE_DOWN &kp RSHFT>;
+            bindings =
+                <&macro_press>,
+                <&mmv MOVE_DOWN &kp RSHFT>,
+                <&macro_pause_for_release>,
+                <&macro_release>;
 
             label = "SMD";
         };
@@ -62,7 +70,11 @@
         amr: amr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&mmv MOVE_RIGHT &kp RALT>;
+            bindings =
+                <&macro_press>,
+                <&mmv MOVE_RIGHT &kp RALT>,
+                <&macro_pause_for_release>,
+                <&macro_release>;
 
             label = "AMR";
         };
