@@ -13,7 +13,7 @@
 
 &mmv { time-to-max-speed-ms = <1500>; };
 
-&mwh { time-to-max-speed-ms = <5000>; };
+&msc { time-to-max-speed-ms = <5000>; };
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
@@ -152,7 +152,7 @@
         mt_wheel: mt_wheel {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_WHEEL";
-            bindings = <&mwh>, <&kp>;
+            bindings = <&msc>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
