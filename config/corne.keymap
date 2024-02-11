@@ -51,7 +51,6 @@
                 <&mmv MOVE_LEFT &kp RCTRL>,
                 <&macro_pause_for_release>,
                 <&macro_release>;
-
             label = "CML";
         };
 
@@ -63,7 +62,6 @@
                 <&mmv MOVE_DOWN &kp RSHFT>,
                 <&macro_pause_for_release>,
                 <&macro_release>;
-
             label = "SMD";
         };
 
@@ -75,7 +73,6 @@
                 <&mmv MOVE_RIGHT &kp RALT>,
                 <&macro_pause_for_release>,
                 <&macro_release>;
-
             label = "AMR";
         };
     };
@@ -85,7 +82,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -99,7 +95,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -113,7 +108,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HMR_CML";
             bindings = <&cml>, <&kp>;
-
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -127,7 +121,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HMR_SMD";
             bindings = <&smd>, <&kp>;
-
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -141,7 +134,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HMR_AMR";
             bindings = <&amr>, <&kp>;
-
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -155,7 +147,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MT_MOUSE";
             bindings = <&mmv>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
@@ -165,7 +156,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MT_WHEEL";
             bindings = <&msc>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
@@ -175,7 +165,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SMART_SHIFT";
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
