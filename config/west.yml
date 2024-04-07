@@ -4,6 +4,9 @@ manifest:
       url-base: https://github.com/urob
     - name: inorichi
       url-base: https://github.com/inorichi
+      remotes:
+    - name: minhe7735
+      url-base: https://github.com/minhe7735
   projects:
     - name: zmk
       remote: urob
