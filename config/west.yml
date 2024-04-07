@@ -1,15 +1,14 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: minhe7735
-      url-base: https://github.com/minhe7735
+remotes:
+    - name: urob
+      url-base: https://github.com/urob
     - name: inorichi
       url-base: https://github.com/inorichi
   projects:
     - name: zmk
-      remote: minhe7735
-      revision: custom
+      remote: urob
+      revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
