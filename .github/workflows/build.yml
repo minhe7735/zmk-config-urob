@@ -3,7 +3,10 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     steps:
-      uses: petejohanson/zmk/.github/workflows/build-user-config.yml@core/zephyr-3.5-update
-      uses: urob/zmk/.github/workflows/build-user-config.yml@build-with-submodules
+      - name: Set up Zephyr 3.5
+        uses: petejohanson/zmk/.github/workflows/build-user-config.yml@core/zephyr-3.5-update
+
+      - name: Set up submodules
+        uses: urob/zmk/.github/workflows/build-user-config.yml@build-with-submodules
 
 
