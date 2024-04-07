@@ -18,12 +18,6 @@
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
-&mmv { // mouse move
-  acceleration-exponent = <1>;
-  time-to-max-speed-ms = <1500>;
-  delay-ms = <0>;
-};
-
 &msc { // mouse wheel
   acceleration-exponent = <1>;
   time-to-max-speed-ms = <5000>;
