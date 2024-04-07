@@ -17,9 +17,9 @@
 /* Global settings */
 
 #define QUICK_TAP_MS 175
-
-#include "conf_changes.dtsi"
 #include "mouse.dtsi"
+#include "conf_changes.dtsi"
+
 #include "combos.dtsi"  // requires layer aliases
 #include "extra_keys.h"
 #include "behavior.dtsi"
