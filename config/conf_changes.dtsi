@@ -33,8 +33,3 @@
 &caps_word {  // mods deactivate caps-word, requires PR #1441
     /delete-property/ ignore-modifiers;
 };
-
-&leader {
-    timeout-ms = <200>;
-    timerless;
-};
