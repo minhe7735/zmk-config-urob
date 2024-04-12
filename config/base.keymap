@@ -12,6 +12,7 @@
 #define SYM 1
 #define NUM 2
 #define FN 3
+#define MOUSE 4
 
 #define XXX &none
 #define ___ &trans
