@@ -15,7 +15,7 @@
 #define COMBO_TERM_SLOW 35
 
 //layers
-ZMK_COMBO(normal,       &to DEF,            RT2 RT3,     DEF SYM NUM FN, COMBO_TERM_FAST)
+ZMK_COMBO(normal,       &to DEF,            RT2 RT3,     DEF SYM NUM FN GENSHIN, COMBO_TERM_FAST)
 ZMK_COMBO(functions,    &sl FN,             RB2 RB3,     DEF,            COMBO_TERM_FAST)
 ZMK_COMBO(genshin,      &to GENSHIN,        RT0 RT4,     DEF,                          COMBO_TERM_FAST)
 
