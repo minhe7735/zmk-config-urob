@@ -1,13 +1,11 @@
 manifest:
   remotes:
-    - name: urob
-      url-base: https://github.com/urob
     - name: minhe7735
       url-base: https://github.com/minhe7735
   projects:
     - name: zmk
-      remote: urob
-      revision: main
+      remote: minhe7735
+      revision: urob
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: minhe7735
