@@ -53,3 +53,17 @@ ZMK_LAYER(fn,
     X_LB     XXX                &kp F1    &kp F2    &kp F3         &kp F12        X_MB     XXX           XXX             &out OUT_TOG    XXX             XXX             X_RB
     X_LH                                            &bootloader    &sys_reset     X_MH     &sys_reset    &bootloader                                                     X_RH
 )
+
+ZMK_LAYER(mouse,
+    X_LT     XXX      XXX      XXX       XXX       XXX       X_MT      XXX    XXX       XXX       XXX       XXX X_RT
+    X_LM     &kp LGUI &kp LALT &kp LSHFT &kp LCTRL XXX       X_MM      XXX    &mkp MB1 &mkp MB2 &mkp MB3 XXX X_RM
+    X_LB     XXX      XXX      XXX       &mo 1     &mo 3     X_MB      XXX    XXX       XXX       XXX       XXX X_RB
+                               &mkp MB1 &mkp MB2 &mkp MB3 X_MH      XXX    XXX       X_RH
+    )
+
+ZMK_LAYER(genshin,
+   X_LT &kp ESCAPE    &kp Q     &kp W     &kp E     &kp R       X_MT     XXX    XXX    XXX    XXX    XXX     X_RT
+   X_LM &kp LCTRL     &kp A     &kp S     &kp D     &kp F       X_MM     XXX    XXX    XXX    XXX    XXX     X_RM
+   X_LB &kp LSHIFT    &kp Z     &kp X     &kp C     &kp V       X_MB     XXX    XXX    XXX    XXX    XXX     X_RB
+                               &kp LALT &kp SPACE    &kp M      X_MH     XXX    XXX                          X_RH
+)

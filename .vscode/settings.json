@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.dtsi": "c",
+        "*.keymap": "c",
+        "helper.h": "c"
+    }
+}
