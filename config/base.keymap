@@ -66,7 +66,7 @@ ZMK_LAYER(mouse,
 
 ZMK_LAYER(genshin,
    X_LT &kp ESCAPE    &kp Q     &kp W     &kp E     &kp R       X_MT     XXX    XXX    XXX    XXX    XXX     X_RT
-   X_LM &kp LCTRL     &kp A     &kp S     &kp D     &kp F       X_MM     XXX    XXX    XXX    XXX    XXX     X_RM
+   X_LM &kp LCTRL     &kp A     &kp S     &kp D     &kp F       X_MM     XXX    &mkp MB1 &mkp MB2 &mkp MB3    XXX     X_RM
    X_LB &kp LSHIFT    &kp Z     &kp X     &kp C     &kp V       X_MB     XXX    XXX    XXX    XXX    XXX     X_RB
                                &kp LALT &kp SPACE    &kp M      X_MH     XXX    XXX                          X_RH
 )
