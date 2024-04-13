@@ -18,10 +18,6 @@
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
-&mo {
-    tapping-term-ms = <0>;
-}
-
 &caps_word {  // mods deactivate caps-word, requires PR #1441
     /delete-property/ ignore-modifiers;
 };

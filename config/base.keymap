@@ -9,10 +9,10 @@
 #include "../zmk-nodefree-config/helper.h"
 
 #define DEF 0
-#define SYM 1
-#define NUM 2
-#define FN 3
-#define MOUSE 4
+#define MOUSE 1
+#define SYM 2
+#define NUM 3
+#define FN 4
 #define GENSHIN 5
 
 #define XXX &none
@@ -36,6 +36,13 @@ ZMK_LAYER(base,
     X_LH                                                   &smart_shft     &lt SYM SPACE     X_MH     &lt NUM BACKSPACE          &mt LS(LC(LEFT_ALT)) ENTER                                                                       X_RH
 )
 
+ZMK_LAYER(mouse,
+    X_LT     XXX      XXX      XXX       XXX       XXX       X_MT      XXX    XXX       XXX       XXX       XXX X_RT
+    X_LM     &kp LGUI &kp LALT &kp LSHFT &kp LCTRL XXX       X_MM      XXX    &mkp MB1 &mkp MB2 &mkp MB3 XXX X_RM
+    X_LB     XXX      XXX      XXX       &mo 2     &mo 3     X_MB      XXX    XXX       XXX       XXX       XXX X_RB
+                               &mkp MB1 &mkp MB2 &mkp MB3 X_MH      XXX    XXX       X_RH
+    )
+
 ZMK_LAYER(sym,
     X_LT     XXX    XXX    &kp LEFT_BRACE          &kp RIGHT_BRACE          &kp PIPE         X_MT     &kp GRAVE    &kp TILDE    &kp LESS_THAN    &kp GREATER_THAN    &kp BACKSLASH         X_RT
     X_LM     XXX    XXX    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp COLON        X_MM     &kp PLUS     &kp MINUS    &kp SLASH        &kp ASTRK           &kp SINGLE_QUOTE      X_RM
@@ -57,12 +64,7 @@ ZMK_LAYER(fn,
     X_LH                                            &bootloader    &sys_reset     X_MH     &sys_reset    &bootloader                                                     X_RH
 )
 
-ZMK_LAYER(mouse,
-    X_LT     XXX      XXX      XXX       XXX       XXX       X_MT      XXX    XXX       XXX       XXX       XXX X_RT
-    X_LM     &kp LGUI &kp LALT &kp LSHFT &kp LCTRL XXX       X_MM      XXX    &mkp MB1 &mkp MB2 &mkp MB3 XXX X_RM
-    X_LB     XXX      XXX      XXX       &mo 1     &mo 3     X_MB      XXX    XXX       XXX       XXX       XXX X_RB
-                               &mkp MB1 &mkp MB2 &mkp MB3 X_MH      XXX    XXX       X_RH
-    )
+
 
 ZMK_LAYER(genshin,
    X_LT &kp ESCAPE    &kp Q     &kp W     &kp E     &kp R       X_MT     XXX    XXX    XXX    XXX    XXX     X_RT
