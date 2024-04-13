@@ -39,7 +39,7 @@ ZMK_LAYER(base,
 ZMK_LAYER(mouse,
     X_LT     XXX      XXX      XXX       XXX       XXX       X_MT      XXX    XXX       XXX       XXX       XXX X_RT
     X_LM     &kp LGUI &kp LALT &kp LSHFT &kp LCTRL XXX       X_MM      XXX    &mkp MB1 &mkp MB2 &mkp MB3 XXX X_RM
-    X_LB     XXX      XXX      XXX       &mo 2     &mo 3     X_MB      XXX    XXX       XXX       XXX       XXX X_RB
+    X_LB     XXX      XXX      &mo 3       &mo 2   XXX       X_MB      XXX    XXX       XXX       XXX       XXX X_RB
                                &mkp MB1 &mkp MB2 &mkp MB3 X_MH      XXX    XXX       X_RH
     )
 
