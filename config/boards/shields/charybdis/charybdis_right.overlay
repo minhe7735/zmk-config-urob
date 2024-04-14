@@ -61,7 +61,7 @@
         scroll-layers = <2>;
         snipe-layers = <3>;
         automouse-layer = <1>;
-        require-prior-idle-ms = <5000>;
+        require-prior-idle-ms = <250>;
     };
 };
 
