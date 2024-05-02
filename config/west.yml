@@ -9,6 +9,6 @@ manifest:
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: minhe7735
-      revision: test
+      revision: main
   self:
     path: config
