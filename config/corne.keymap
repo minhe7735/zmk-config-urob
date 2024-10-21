@@ -22,7 +22,7 @@
 &msc { time-to-max-speed-ms = <5000>; };
 
 / {
-    chosen { zmk,matrix_transform = &default_transform; };
+    chosen { zzmk,physical-layout = &foostan_corne_5col_layout; };
 
   combos {
     compatible = "zmk,combos";
