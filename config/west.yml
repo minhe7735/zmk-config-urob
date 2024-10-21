@@ -1,51 +1,38 @@
-# This file specifies the build dependencies for Github Action workflows and
-# for local build environments. The workspace has three toplevel directories
-# containing the user config, user modules and ZMK. Zephyr and its dependencies
-# are namespaced under /zmk to keep the toplevel clean.
-#
-# ZMK-Workspace
-# ├── config
-# ├── modules (user modules)
-# └── zmk
-#     └── modules (Zephyr modules)
-#
-# To create a local build environment, clone this repository and then run the
-# following commands from its toplevel directory:
-#
-# $ west init -l config
-# $ west update
-# $ west zephyr-export
-#
----
 manifest:
-  defaults:
-    remote: urob
-
   remotes:
-    - name: upstream
+    - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: minhe7735
+      url-base: https://github.com/minhe7735
     - name: urob
       url-base: https://github.com/urob
-
+    # Additional modules containing boards/shields/custom code can be listed here as well
+    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
-    - name: zmk-helpers
+    - name: zmk
+      remote: petejohanson
+      revision: feat/pointers-with-input-processors
+      import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: badjeff
       revision: main
-      path: modules/helpers
+    - name: zmk-split-peripheral-input-relay
+      remote: badjeff
+      revision: main
+    - name: zmk-input-behavior-listener
+      remote: minhe7735 
+      revision: main
     - name: zmk-auto-layer
+      remote: urob
       revision: main
       path: modules/auto-layer
     - name: zmk-tri-state
+      remote: urob
       revision: main
       path: modules/tri-state
-
-    # ZMK with Zephyr namespaced under /zmk. This requires that ZMK imports
-    # Zephyr with a path other than `zephyr` (as in `going-modular`).
-    - name: zmk
-      revision: going-modular
-      path: .
-      import:
-        file: app/west.yml
-        path-prefix: zmk
-
   self:
     path: config
