@@ -3,11 +3,17 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <layouts/foostan/corne.dtsi>
 
 #define DEF 0
 #define SYM 1
 #define NUM 2
 #define FN 3
+
+&foostan_corne_5col_layout {
+    transform = <&five_column_transform>;
+};
 
 &sk {
     release-after-ms = <600>;
