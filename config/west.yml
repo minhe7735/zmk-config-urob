@@ -17,10 +17,6 @@ manifest:
       remote: petejohanson
       revision: feat/pointers-with-input-processors
       import: app/west.yml
-    - name: zmk-auto-layer
-      remote: urob
-      revision: main
-      path: modules/auto-layer
     - name: zmk-tri-state
       remote: urob
       revision: main
