@@ -23,7 +23,10 @@
 &msc { time-to-max-speed-ms = <5000>; };
 
 / {
-    chosen { zmk,physical-layout = &foostan_corne_5col_layout; };
+    chosen { 
+zmk_studio_rpc_uart = &uart0;
+zmk,physical-layout = &foostan_corne_5col_layout; 
+};
 
   combos {
     compatible = "zmk,combos";
