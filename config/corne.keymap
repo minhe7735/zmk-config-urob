@@ -114,7 +114,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <250>;
             quick-tap-ms = <150>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
@@ -127,7 +127,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <250>;
             quick-tap-ms = <150>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
@@ -140,7 +140,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <250>;
             quick-tap-ms = <150>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
@@ -153,7 +153,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <250>;
             quick-tap-ms = <150>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
@@ -166,7 +166,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <250>;
             quick-tap-ms = <150>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
@@ -203,9 +203,9 @@
         compatible = "zmk,keymap";
         base {
             bindings = <
-&kp FSLH  &kp W  &kp F      &kp P         &kp B          &mt_wheel SCRL_UP J    &mt_wheel SCRL_LEFT L  &mt_mouse MOVE_UP U  &mt_wheel SCRL_RIGHT Y  &kp SEMI
-&kp A     &kp R  &kp S      &kp T         &kp G          &mt_wheel SCRL_DOWN M  &hmr_cml 0 N           &hmr_smd 0 E         &hmr_amr 0 I            &hmr RIGHT_GUI O
-&kp Z     &kp X  &kp C      &kp D         &kp V          &kp K                  &kp H                  &kp COMMA            &kp DOT                 &kp Q           
+&kp FSLH       &kp W          &kp F           &kp P                &kp B          &mt_wheel SCRL_UP J    &mt_wheel SCRL_LEFT L  &mt_mouse MOVE_UP U  &mt_wheel SCRL_RIGHT Y  &kp SEMI
+&hml LGUI A    &hml LALT R    &hml LSHFT S    &hml LCTRL T         &kp G          &mt_wheel SCRL_DOWN M  &hmr_cml 0 N           &hmr_smd 0 E         &hmr_amr 0 I            &hmr RIGHT_GUI O
+&kp Z          &kp X           &kp C          &kp D                &kp V          &kp K                  &kp H                  &kp COMMA            &kp DOT                 &kp Q           
                            &mkp LCLK  &smart_shift  &lt 1 SPACE    &lt 2 BACKSPACE        &kp ENTER              &mkp RCLK
             >;
         };
