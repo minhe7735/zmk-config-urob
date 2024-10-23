@@ -181,6 +181,7 @@
         mt_mouse: mt_mouse {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_MOUSE";
+            flavor = "tap-preferred";
             bindings = <&mmv>, <&kp>;
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -190,6 +191,7 @@
         mt_wheel: mt_wheel {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_WHEEL";
+            flavor = "tap-preferred";
             bindings = <&msc>, <&kp>;
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -212,32 +214,31 @@
 &kp FSLH       &kp W          &kp F           &kp P                &kp B          &mt_wheel SCRL_UP J    &mt_wheel SCRL_LEFT L  &mt_mouse MOVE_UP U  &mt_wheel SCRL_RIGHT Y  &kp SEMI
 &hml LGUI A    &hml LALT R    &hml LSHFT S    &hml LCTRL T         &kp G          &mt_wheel SCRL_DOWN M  &hmr_cml 0 N           &hmr_smd 0 E         &hmr_amr 0 I            &hmr RIGHT_GUI O
 &kp Z          &kp X           &kp C          &kp D                &kp V          &kp K                  &kp H                  &kp COMMA            &kp DOT                 &kp Q           
-                           &mkp LCLK  &smart_shift  &lt 1 SPACE    &lt 2 BACKSPACE        &kp ENTER              &mkp RCLK
+                           &mkp LCLK  &smart_shift  &lt SYM SPACE    &lt NUM BACKSPACE        &mt LS(LC(LEFT_ALT)) ENTER              &mkp RCLK
             >;
         };
-        sybmol {
-            bindings = <
-&none  &none  &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(PIPE)     &kp GRAVE     &kp LS(TILDE)  &kp LS(LT)     &kp LS(GT)    &kp BSLH
-&none  &none  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)    &kp LS(PLUS)  &kp MINUS      &kp FSLH       &kp LS(STAR)  &kp SQT
-&none  &none  &kp LBKT      &kp RBKT      &kp LS(QMARK)    &kp LS(AMPS)  &kp EQUAL      &kp LS(UNDER)  &kp DOT       &kp LS(DQT)
-                     &none         &none         &none            &none         &none          &none
-            >;
-        };
-        number {
-            bindings = <
-&none         &kp N7        &kp N8         &kp N9         &none            &none          &kp PG_UP        &kp UP          &kp PG_DN        &none
-&kp LEFT_GUI  &hml LALT N4  &hml LSHFT N5  &hml LCTRL N6  &none            &none          &hmr RCTRL LEFT  &hmr RALT DOWN  &hmr RALT RIGHT  &kp RIGHT_GUI
-&none         &kp N1        &kp N2         &kp N3         &kp LC(MINUS)    &kp LC(EQUAL)  &kp HOME         &none           &kp END          &none
-                                   &none          &kp N0         &none            &none          &none            &none
-            >;
-        };
-        function {
-            bindings = <
-&none  &kp F7  &kp F8  &kp F9  &kp F10    &none       &none         &none         &none         &none
-&none  &kp F4  &kp F5  &kp F6  &kp F11    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-&none  &kp F1  &kp F2  &kp F3  &kp F12    &none       &none         &out OUT_TOG  &none         &none
-                      &none   &none   &none      &none       &none         &none
-            >;
-        };
+    Sym {
+      bindings = <
+        &none    &none    &kp LEFT_BRACE          &kp RIGHT_BRACE          &kp PIPE         &kp GRAVE    &kp TILDE    &kp LESS_THAN    &kp GREATER_THAN    &kp BACKSLASH        
+        &none    &none    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp COLON        &kp PLUS     &kp MINUS    &kp SLASH        &kp ASTRK           &kp SINGLE_QUOTE    
+        &none    &none    &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &kp QUESTION     &kp AMPS     &kp EQUAL    &kp UNDER        &kp PERIOD          &kp DOUBLE_QUOTES  
+        &none                   &none                    &trans           &none        &none                                                                     
+      >;
+    };
+    Num {
+      bindings = <
+        &none      &kp N7          &kp N8           &kp N9           &none            &none              &kp PG_UP          &kp UP             &kp PG_DN          &none          
+        &kp LGUI   &hml LALT N4    &hml LSHFT N5    &hml LCTRL N6    &none            &none              &hmr RCTRL LEFT    &hmr RSHFT DOWN    &hmr RALT RIGHT    &kp RGUI     
+        &none      &kp N1          &kp N2           &kp N3           &kp LC(MINUS)    &kp LC(EQUAL)      &kp HOME           &trans             &kp END            &none          
+        &kp DOT         &kp N0           &kp LS(LC(LEFT_ALT))    &trans              &none
+      >;
+    };
+    Fun {
+      bindings = <
+        &kp LC(LA(DEL))    &kp F7    &kp F8    &kp F9         &kp F10        &none         &none           &none           &none           &none             
+        &none              &kp F4    &kp F5    &kp F6         &kp F11        &none         &kp LCTRL     &kp LSHFT       &kp LALT        &kp LGUI         
+        &none              &kp F1    &kp F2    &kp F3         &kp F12        &none         &none           &out OUT_TOG    &none           &none  
+        &none     &none &none &none &none
+      >;
     };
 };
